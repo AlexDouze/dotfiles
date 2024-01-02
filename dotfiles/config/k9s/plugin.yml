@@ -1,0 +1,24 @@
+plugin:
+  # Sends logs over to jq for processing. This leverages kubectl plugin kubectl-jq.
+  jqlogs:
+    shortCut: Ctrl-J
+    confirm: false
+    description: "Logs (jq)"
+    scopes:
+      - po
+    command: sh
+    background: false
+    args:
+      - -c
+      - "kubectl logs $NAME -n $NAMESPACE --context $CONTEXT | jq -r . | bat"
+  open:
+    shortCut: Ctrl-O
+    confirm: false
+    description: "Open ingress"
+    scopes:
+      - ing
+    command: sh
+    background: true
+    args:
+      - -c
+      - "open $(kubectl get ing -n $NAMESPACE $NAME --context $CONTEXT -o jsonpath='https://{.spec.rules[0].host}')"

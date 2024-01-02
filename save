@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Save current directory
+current=$PWD
+cd $HOME/.dotfiles
+
+# Bundle Brewfile
+brew bundle dump --describe -f
+
+# Commit and push
+git add $HOME/.dotfiles/Brewfile
+aicommits
+git push
+
+# Restore current directory
+cd $current

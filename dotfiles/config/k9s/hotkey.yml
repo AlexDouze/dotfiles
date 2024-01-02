@@ -1,0 +1,21 @@
+hotKey:
+  p:
+    shortCut:    p
+    description: Viewing pods
+    command:     pods
+  n:
+    shortCut:    n
+    description: Viewing namespace
+    command:     namespace
+  x:
+    shortCut:    x
+    description: Viewing secrets
+    command:     secrets
+  m:
+    shortCut:    m
+    description: Viewing configmaps
+    command:     cm
+  v:
+    shortCut:    v
+    description: Viewing services
+    command:     svc
