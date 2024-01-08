@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Check first param is set
+if [ -z "$1" ]; then
+    echo "Usage: $0 [perso|pro]"
+    exit 1
+fi
+
+git config user.name "Alexandre Ledit"
+
+if [ "$1" = "perso" ]; then
+    git config user.email "alexandre.ledit@gmail.com"
+    git config user.signingkey alexandre.ledit@gmail.com
+fi
+
+if [ "$1" = "pro" ]; then
+    git config user.email "alexandre.ledit@airnity.com"
+    git config user.signingkey alexandre.ledit@airnity.com
+fi

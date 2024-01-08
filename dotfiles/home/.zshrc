@@ -66,6 +66,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.krew/bin"
 export PATH="$PATH:$HOME/.dotfiles"
+export PATH="$PATH:$HOME/.dotfiles/scripts"
 
 
 #Alias
