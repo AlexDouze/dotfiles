@@ -1,3 +1,4 @@
+tap "cormacrelf/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
@@ -156,6 +157,8 @@ brew "zsh-fast-syntax-highlighting"
 brew "zsh-history-substring-search"
 # ZSH plugin that reminds you to use existing aliases for commands you just typed
 brew "zsh-you-should-use"
+# Watcher for macOS 10.14+ light/dark mode changes
+brew "cormacrelf/tap/dark-notify"
 # Automatically generate markdown documentation for helm charts
 brew "norwoodj/tap/helm-docs"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
