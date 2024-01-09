@@ -23,3 +23,6 @@ keymap('n', '<leader>e', ':NvimTreeOpen<cr>', opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 keymap("v", "p", '"_dP', opts) -- Paste without yanking
+
+keymap("n", "<leader>y", '"+y', opts) -- Copy to clipboard in normal, visual, select and operator modes
+keymap("v", "<leader>y", '"+y', opts) -- Copy to clipboard in normal, visual, select and operator modes

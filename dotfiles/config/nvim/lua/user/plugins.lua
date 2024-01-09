@@ -36,11 +36,18 @@ require("lazy").setup({
       'numToStr/Comment.nvim',
       lazy = false,
   },
-  "nvim-treesitter/nvim-treesitter",
+  {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"},
   "JoosepAlviste/nvim-ts-context-commentstring",
   "lewis6991/gitsigns.nvim",
   "akinsho/toggleterm.nvim",
   "cormacrelf/dark-notify",
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.5",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+   },
 })
 
 -- empty setup using defaults
