@@ -107,6 +107,8 @@ brew "pinentry-mac"
 brew "postgresql@14"
 # Rsync for cloud storage
 brew "rclone"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Rancher Kubernetes Engine, a Kubernetes installer that works everywhere
 brew "rke"
 # Rust toolchain installer
