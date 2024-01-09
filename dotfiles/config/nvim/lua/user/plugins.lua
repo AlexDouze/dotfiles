@@ -24,8 +24,7 @@ require("lazy").setup({
     lazy = false,
     priority = 1000,
     config = function()
-      vim.o.background = 'dark' -- or 'light'
-
+      vim.o.background = 'light' -- or 'light'
       vim.cmd.colorscheme 'solarized'
     end,
   },
@@ -41,6 +40,7 @@ require("lazy").setup({
   "JoosepAlviste/nvim-ts-context-commentstring",
   "lewis6991/gitsigns.nvim",
   "akinsho/toggleterm.nvim",
+  "cormacrelf/dark-notify",
 })
 
 -- empty setup using defaults
