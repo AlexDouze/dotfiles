@@ -6,7 +6,7 @@
 
 # Styles...
 foreground: &foreground "#839495"
-background: &background "#002833"
+background: &background default
 current_line: &current_line "#003440"
 selection: &selection "#003440"
 comment: &comment "#6272a4"
