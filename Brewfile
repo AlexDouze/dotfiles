@@ -180,7 +180,7 @@ cask "aerial-beta"
 # Application launcher and productivity software
 cask "alfred"
 # Chromium based browser
-cask "arc"
+cask "arc", greedy: true
 # Menu bar icon organizer
 cask "bartender"
 # Code snippet manager
@@ -190,13 +190,13 @@ cask "cryptomator"
 # Disk space visualizer
 cask "daisydisk"
 # Voice and text chat software
-cask "discord"
+cask "discord", greedy: true
 # Application window manager focusing on simplicity
 cask "divvy"
 # Launcher for *Epic Games* games
 cask "epic-games"
 # Web browser
-cask "firefox"
+cask "firefox", greedy: true
 # Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Developer targeted fonts with a high number of glyphs
@@ -244,11 +244,11 @@ cask "viscosity"
 # Open-source code editor
 cask "visual-studio-code"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark", greedy: true
 # X Certificate and Key management
 cask "xca"
 # Video communication and virtual meeting platform
-cask "zoom"
+cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
 vscode "adamhartford.vscode-base64"
 vscode "alefragnani.project-manager"
