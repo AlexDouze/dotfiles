@@ -22,3 +22,25 @@ plugin:
     args:
       - -c
       - "open $(kubectl get ing -n $NAMESPACE $NAME --context $CONTEXT -o jsonpath='https://{.spec.rules[0].host}')"
+  removefinalizers:
+    shortCut: Ctrl-L
+    confirm: true
+    scopes:
+      - all
+    description: |
+      Removes all finalizers from selected resource. Be careful when using it,
+      it may leave dangling resources or delete them
+    command: kubectl
+    background: true
+    args:
+      - patch
+      - --context
+      - $CONTEXT
+      - --namespace
+      - $NAMESPACE
+      - $RESOURCE_NAME
+      - $NAME
+      - -p
+      - '{"metadata":{"finalizers":null}}'
+      - --type
+      - merge
