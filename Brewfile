@@ -214,7 +214,7 @@ cask "karabiner-elements"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
+cask "microsoft-teams", greedy: true
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Replacement for Docker Desktop
@@ -228,7 +228,7 @@ cask "royal-tsx-beta"
 # Automatically checks computer's security
 cask "silentknight"
 # Team communication and collaboration software
-cask "slack"
+cask "slack", greedy: true
 # Notepad with a built-in calculator
 cask "soulver"
 # Music streaming service
