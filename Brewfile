@@ -229,8 +229,6 @@ cask "royal-tsx-beta", greedy: true
 cask "silentknight"
 # Team communication and collaboration software
 cask "slack", greedy: true
-# Notepad with a built-in calculator
-cask "soulver"
 # Music streaming service
 cask "spotify"
 # Quicklook extension for source files
