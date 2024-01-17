@@ -188,7 +188,7 @@ cask "codespace"
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator"
 # Disk space visualizer
-cask "daisydisk"
+cask "daisydisk", greedy: true
 # Voice and text chat software
 cask "discord", greedy: true
 # Application window manager focusing on simplicity
@@ -220,11 +220,11 @@ cask "monitorcontrol"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
-cask "protonmail-bridge"
+cask "protonmail-bridge", greedy: true
 # VPN client focusing on security
 cask "protonvpn"
 # Remote management solution
-cask "royal-tsx-beta"
+cask "royal-tsx-beta", greedy: true
 # Automatically checks computer's security
 cask "silentknight"
 # Team communication and collaboration software
