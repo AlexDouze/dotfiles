@@ -240,7 +240,7 @@ cask "transmission"
 # OpenVPN client with AppleScript support
 cask "viscosity"
 # Open-source code editor
-cask "visual-studio-code"
+cask "visual-studio-code", greedy: true
 # Network protocol analyzer
 cask "wireshark", greedy: true
 # X Certificate and Key management
