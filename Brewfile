@@ -208,7 +208,7 @@ cask "httpie"
 # System monitoring app
 cask "istat-menus"
 # Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2-beta"
+cask "iterm2-beta", greedy: true
 # Keyboard customizer
 cask "karabiner-elements"
 # Provides updates to various Microsoft products
@@ -230,11 +230,11 @@ cask "silentknight"
 # Team communication and collaboration software
 cask "slack", greedy: true
 # Music streaming service
-cask "spotify"
+cask "spotify", greedy: true
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Mesh VPN based on Wireguard
-cask "tailscale"
+cask "tailscale", greedy: true
 # Open-source BitTorrent client
 cask "transmission"
 # OpenVPN client with AppleScript support
