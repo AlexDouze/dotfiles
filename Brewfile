@@ -170,63 +170,63 @@ brew "oven-sh/bun/bun"
 # The official Upbound CLI
 brew "upbound/tap/up"
 # Password manager that keeps all passwords secure behind one password
-cask "1password"
+cask "1password", greedy: true
 # Command-line interface for 1Password
-cask "1password-cli"
+cask "1password-cli", greedy: true
 # Stand alone ad blocker
-cask "adguard"
+cask "adguard", greedy: true
 # Apple TV Aerial screensaver
-cask "aerial-beta"
+cask "aerial-beta", greedy: true
 # Application launcher and productivity software
-cask "alfred"
+cask "alfred", greedy: true
 # Chromium based browser
 cask "arc", greedy: true
 # Menu bar icon organizer
-cask "bartender"
+cask "bartender", greedy: true
 # Code snippet manager
-cask "codespace"
+cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool
-cask "cryptomator"
+cask "cryptomator", greedy: true
 # Disk space visualizer
 cask "daisydisk", greedy: true
 # Voice and text chat software
 cask "discord", greedy: true
 # Application window manager focusing on simplicity
-cask "divvy"
+cask "divvy", greedy: true
 # Launcher for *Epic Games* games
-cask "epic-games"
+cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
 # Free monospaced font with programming ligatures
-cask "font-fira-code"
+cask "font-fira-code", greedy: true
 # Developer targeted fonts with a high number of glyphs
-cask "font-hack-nerd-font"
+cask "font-hack-nerd-font", greedy: true
 # Free and open-source image editor
-cask "gimp"
+cask "gimp", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
-cask "httpie"
+cask "httpie", greedy: true
 # System monitoring app
-cask "istat-menus"
+cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2-beta", greedy: true
 # Keyboard customizer
-cask "karabiner-elements"
+cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
-cask "microsoft-auto-update"
+cask "microsoft-auto-update", greedy: true
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams", greedy: true
 # Tool to control external monitor brightness & volume
-cask "monitorcontrol"
+cask "monitorcontrol", greedy: true
 # Replacement for Docker Desktop
-cask "orbstack"
+cask "orbstack", greedy: true
 # Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
 cask "protonmail-bridge", greedy: true
 # VPN client focusing on security
-cask "protonvpn"
+cask "protonvpn", greedy: true
 # Remote management solution
 cask "royal-tsx-beta", greedy: true
 # Automatically checks computer's security
-cask "silentknight"
+cask "silentknight", greedy: true
 # Team communication and collaboration software
 cask "slack", greedy: true
 # Music streaming service
@@ -236,15 +236,15 @@ cask "syntax-highlight"
 # Mesh VPN based on Wireguard
 cask "tailscale", greedy: true
 # Open-source BitTorrent client
-cask "transmission"
+cask "transmission", greedy: true
 # OpenVPN client with AppleScript support
-cask "viscosity"
+cask "viscosity", greedy: true
 # Open-source code editor
 cask "visual-studio-code", greedy: true
 # Network protocol analyzer
 cask "wireshark", greedy: true
 # X Certificate and Key management
-cask "xca"
+cask "xca", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
