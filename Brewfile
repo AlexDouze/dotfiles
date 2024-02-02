@@ -231,6 +231,8 @@ cask "silentknight", greedy: true
 cask "slack", greedy: true
 # Music streaming service
 cask "spotify", greedy: true
+# Video game digital distribution service
+cask "steam", greedy: true
 # Quicklook extension for source files
 cask "syntax-highlight"
 # Mesh VPN based on Wireguard
