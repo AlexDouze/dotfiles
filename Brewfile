@@ -249,6 +249,8 @@ cask "visual-studio-code", greedy: true
 cask "wireshark", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
+# Application for configuring any YubiKey
+cask "yubico-yubikey-manager"
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
