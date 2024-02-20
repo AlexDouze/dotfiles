@@ -155,6 +155,8 @@ brew "ykman"
 brew "ykpers"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Command-line tool for the YubiKey PIV application
+brew "yubico-piv-tool"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
 # Zsh port of Fish shell's history search
