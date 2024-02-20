@@ -64,7 +64,7 @@ brew "hopenpgp-tools"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
-brew "httpie", link: false
+brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Network, Service & Security Observability for Kubernetes using eBPF
