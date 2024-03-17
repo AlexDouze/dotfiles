@@ -4,7 +4,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "norwoodj/tap"
 tap "oven-sh/bun"
-tap "upbound/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Writes your git commit messages for you with AI
@@ -169,8 +168,6 @@ brew "cormacrelf/tap/dark-notify"
 brew "norwoodj/tap/helm-docs"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
-# The official Upbound CLI
-brew "upbound/tap/up"
 # Password manager that keeps all passwords secure behind one password
 cask "1password", greedy: true
 # Command-line interface for 1Password
