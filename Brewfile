@@ -205,6 +205,8 @@ cask "font-fira-code", greedy: true
 cask "font-hack-nerd-font", greedy: true
 # Free and open-source image editor
 cask "gimp", greedy: true
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie", greedy: true
 # System monitoring app
