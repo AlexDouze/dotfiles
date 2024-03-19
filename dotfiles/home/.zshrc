@@ -109,3 +109,6 @@ bindkey '^p' history-substring-search-up
 AUTOENV_ENABLE_LEAVE="true"
 AUTOENV_ASSUME_YES="true"
 source $(brew --prefix autoenv)/activate.sh
+
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
