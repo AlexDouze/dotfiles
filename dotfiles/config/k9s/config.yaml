@@ -7,7 +7,7 @@ k9s:
   noExitOnCtrlC: false
   ui:
     enableMouse: false
-    headless: true
+    headless: false
     logoless: false
     crumbsless: false
     noIcons: false
