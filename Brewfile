@@ -1,7 +1,5 @@
 tap "cormacrelf/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "norwoodj/tap"
 tap "oven-sh/bun"
 # Search tool like grep, but optimized for programmers
