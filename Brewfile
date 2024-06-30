@@ -100,8 +100,6 @@ brew "minikube"
 brew "neovim"
 # Manage multiple NodeJS versions
 brew "nodenv"
-# Tool for creating identical machine images for multiple platforms
-brew "packer"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
@@ -126,8 +124,6 @@ brew "telnet"
 brew "wireshark", link: false
 # Terminal UI for tshark, inspired by Wireshark
 brew "termshark"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
 # Text interface for Git repositories
