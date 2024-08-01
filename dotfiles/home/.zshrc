@@ -67,6 +67,7 @@ export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.krew/bin"
 export PATH="$PATH:$HOME/.dotfiles"
 export PATH="$PATH:$HOME/.dotfiles/scripts"
+export PATH="$PATH:$(npm get prefix -g)/bin"
 
 
 #Alias
