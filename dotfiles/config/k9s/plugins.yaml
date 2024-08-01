@@ -44,3 +44,19 @@ plugins:
       - '{"metadata":{"finalizers":null}}'
       - --type
       - merge
+  ksniff:
+    shortCut: Ctrl-Y
+    confirm: false
+    description: "Sniff"
+    scopes:
+      - po
+    command: kubectl
+    background: true
+    args:
+      - sniff
+      - $NAME
+      - -n
+      - $NAMESPACE
+      - -x
+      - $CONTEXT
+      - -p

@@ -1,12 +1,1 @@
 views:
-  v1/nodes:
-    columns:
-      - NAME
-      - STATUS
-      - PODS
-      - CPU
-      - MEM
-      - "%CPU"
-      - "%MEM"
-      - AGE
-      - LABELS
