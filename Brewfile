@@ -101,7 +101,7 @@ brew "nodenv"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
-brew "postgresql@14"
+brew "postgresql@15"
 # Rsync for cloud storage
 brew "rclone"
 # Search tool like grep and The Silver Searcher
