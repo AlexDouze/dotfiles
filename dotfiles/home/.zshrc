@@ -32,7 +32,6 @@ plugins=(
   starship
   terraform
   tig
-  vault
   vscode
   z
   history-substring-search
