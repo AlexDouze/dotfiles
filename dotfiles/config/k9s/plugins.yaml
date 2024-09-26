@@ -60,3 +60,20 @@ plugins:
       - -x
       - $CONTEXT
       - -p
+  debug:
+    shortCut: Ctrl-U
+    confirm: false
+    description: "Debug"
+    scopes:
+      - po
+    command: kubectl
+    background: false
+    args:
+      - debug
+      - $NAME
+      - -n
+      - $NAMESPACE
+      - --context
+      - $CONTEXT
+      - -it
+      - --image=nicolaka/netshoot
