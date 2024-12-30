@@ -214,8 +214,6 @@ cask "microsoft-teams", greedy: true
 cask "monitorcontrol", greedy: true
 # Replacement for Docker Desktop
 cask "orbstack", greedy: true
-# Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
-cask "protonmail-bridge", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
 # Remote management solution
