@@ -90,7 +90,7 @@ alias addr="http -b https://ifconfig.co/json"
 alias rnt='airnity'
 alias vim="nvim"
 alias vi="nvim"
-alias aic="aicommit2 -y"
+alias aic="aicommits"
 
 # GPG
 gpgconf --launch gpg-agent
