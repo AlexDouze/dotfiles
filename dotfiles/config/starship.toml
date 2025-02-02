@@ -99,7 +99,7 @@ $kubernetes\
 # Left config
 [directory]
 truncation_symbol = "…/"
-truncate_to_repo = false
+truncate_to_repo = true
 style= "#2aa198"
 read_only = " "
 
@@ -184,3 +184,6 @@ symbol = " "
 disabled = false
 format = '[$time]($style #268bd2) '
 time_format = "%T"
+
+[gcloud]
+disabled = true
