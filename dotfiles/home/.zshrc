@@ -18,18 +18,22 @@ plugins=(
   docker-compose
   encode64
   extract
+  genpass
   gh
   git-commit
   git-extras
   git
   gitignore
+  golang
   helm
   httpie
   kubectl
   macos
   magic-enter
   minikube
+  ssh
   starship
+  tailscale
   terraform
   tig
   vscode
