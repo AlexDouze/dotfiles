@@ -2,10 +2,17 @@ tap "cormacrelf/tap"
 tap "homebrew/bundle"
 tap "norwoodj/tap"
 tap "oven-sh/bun"
+tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
+# Platform built on V8 to build network applications
+brew "node"
 # Writes your git commit messages for you with AI
 brew "aicommits"
+# Mozilla CA bundle for Python
+brew "certifi"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # GitOps Continuous Delivery for Kubernetes
@@ -28,8 +35,12 @@ brew "clusterctl"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Secure runtime for JavaScript and TypeScript
+brew "deno"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Programming language for highly scalable real-time systems
+brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Simple, fast and user-friendly alternative to find
@@ -46,6 +57,8 @@ brew "git-extras"
 brew "git-lfs"
 # Update multiple git repositories at once
 brew "gitup"
+# Core application library for C
+brew "glib"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
@@ -54,6 +67,10 @@ brew "gnupg"
 brew "go"
 # Deliver Go binaries as fast and easily as possible
 brew "goreleaser"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Like cURL, but for gRPC
+brew "grpcurl"
 # Kubernetes package manager
 brew "helm"
 # Command-line tools for OpenPGP-related operations
@@ -84,6 +101,8 @@ brew "kubernetes-cli"
 brew "krew"
 # Kubernetes object analysis recommendations for improved reliability and security
 brew "kube-score"
+# SDK for building Kubernetes APIs using CRDs
+brew "kubebuilder"
 # Kubernetes controller and tool for one-way encrypted Secrets
 brew "kubeseal"
 # Template-free customization of Kubernetes YAML manifests
@@ -98,6 +117,10 @@ brew "minikube"
 brew "neovim"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
+# SDK for building Kubernetes applications
+brew "operator-sdk"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
@@ -109,7 +132,9 @@ brew "ripgrep"
 # Rancher Kubernetes Engine, a Kubernetes installer that works everywhere
 brew "rke"
 # Rust toolchain installer
-brew "rustup-init"
+brew "rustup"
+# SOcket CAT: netcat on steroids
+brew "socat"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
@@ -118,7 +143,7 @@ brew "starship"
 brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
-# Graphical network analyzer and capture tool
+# Network analyzer and capture tool - without graphical user interface
 brew "wireshark", link: false
 # Terminal UI for tshark, inspired by Wireshark
 brew "termshark"
@@ -158,10 +183,14 @@ brew "zsh-history-substring-search"
 brew "zsh-you-should-use"
 # Watcher for macOS 10.14+ light/dark mode changes
 brew "cormacrelf/tap/dark-notify"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Automatically generate markdown documentation for helm charts
 brew "norwoodj/tap/helm-docs"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
+# Redpanda CLI & toolbox
+brew "redpanda-data/tap/redpanda"
 # Password manager that keeps all passwords secure behind one password
 cask "1password", greedy: true
 # Command-line interface for 1Password
@@ -172,15 +201,17 @@ cask "adguard", greedy: true
 cask "aerial-beta", greedy: true
 # Application launcher and productivity software
 cask "alfred", greedy: true
+# Allows connection to a computer remotely
+cask "anydesk", greedy: true
 # Chromium based browser
 cask "arc", greedy: true
-# Menu bar icon organizer
+# Menu bar icon organiser
 cask "bartender", greedy: true
 # Code snippet manager
 cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool
 cask "cryptomator", greedy: true
-# Disk space visualizer
+# Disk space visualiser
 cask "daisydisk", greedy: true
 # Voice and text chat software
 cask "discord", greedy: true
@@ -204,16 +235,22 @@ cask "httpie", greedy: true
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2-beta", greedy: true
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update", greedy: true
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams", greedy: true
+# Sandbox construction video game
+cask "minecraft", greedy: true
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol", greedy: true
 # Replacement for Docker Desktop
 cask "orbstack", greedy: true
+# Administration and development platform for PostgreSQL
+cask "pgadmin4", greedy: true
+# Collaboration platform for API development
+cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
 # Remote management solution
@@ -227,8 +264,8 @@ cask "spotify", greedy: true
 # Video game digital distribution service
 cask "steam", greedy: true
 # Quicklook extension for source files
-cask "syntax-highlight"
-# Mesh VPN based on Wireguard
+cask "syntax-highlight", greedy: true
+# Mesh VPN based on WireGuard
 cask "tailscale", greedy: true
 # Open-source BitTorrent client
 cask "transmission", greedy: true
@@ -241,7 +278,7 @@ cask "wireshark", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
 # Application for configuring any YubiKey
-cask "yubico-yubikey-manager"
+cask "yubico-yubikey-manager", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
@@ -252,24 +289,27 @@ vscode "bradlc.vscode-tailwindcss"
 vscode "christian-kohler.path-intellisense"
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
+vscode "denoland.vscode-deno"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "flesler.url-encode"
-vscode "FrancescoBoffa.rfc-reader"
-vscode "GitHub.codespaces"
-vscode "GitHub.copilot"
-vscode "GitHub.copilot-chat"
+vscode "github.codespaces"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
-vscode "GitHub.vscode-pull-request-github"
+vscode "github.vscode-pull-request-github"
 vscode "golang.go"
-vscode "Gruntfuggly.todo-tree"
+vscode "gruntfuggly.todo-tree"
 vscode "hashicorp.hcl"
 vscode "hashicorp.terraform"
 vscode "hediet.vscode-drawio"
-vscode "JakeBecker.elixir-ls"
+vscode "hilleer.yaml-plus-json"
+vscode "jakebecker.elixir-ls"
 vscode "janisdd.vscode-edit-csv"
+vscode "jflbr.jwt-decoder"
 vscode "jlcs-es.x509-parser"
+vscode "jq-syntax-highlighting.jq-syntax-highlighting"
 vscode "lukepearson.cidr-ip-range"
 vscode "mhutchie.git-graph"
 vscode "ms-azuretools.vscode-docker"
@@ -278,19 +318,20 @@ vscode "ms-python.autopep8"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.makefile-tools"
 vscode "ms-vsliveshare.vsliveshare"
 vscode "oderwat.indent-rainbow"
+vscode "pascalreitermann93.vscode-yaml-sort"
 vscode "pflannery.vscode-versionlens"
 vscode "redhat.vscode-xml"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
+vscode "saoudrizwan.claude-dev"
 vscode "svelte.svelte-vscode"
 vscode "tamasfe.even-better-toml"
-vscode "Tim-Koehler.helm-intellisense"
+vscode "tim-koehler.helm-intellisense"
 vscode "upboundio.upbound"
-vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vscode-icons-team.vscode-icons"
 vscode "yzhang.markdown-all-in-one"
-vscode "davidnussio.vscode-jq-playground"
-vscode "jq-syntax-highlighting.jq-syntax-highlighting"
