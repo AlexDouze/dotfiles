@@ -234,7 +234,7 @@ cask "httpie", greedy: true
 # System monitoring app
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2-beta", greedy: true
+cask "iterm2", greedy: true
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
@@ -253,8 +253,6 @@ cask "pgadmin4", greedy: true
 cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
-# Remote management solution
-cask "royal-tsx-beta", greedy: true
 # Automatically checks computer's security
 cask "silentknight", greedy: true
 # Team communication and collaboration software
