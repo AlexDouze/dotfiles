@@ -198,7 +198,7 @@ cask "1password-cli", greedy: true
 # Stand alone ad blocker
 cask "adguard", greedy: true
 # Apple TV Aerial screensaver
-cask "aerial-beta", greedy: true
+cask "aerial@beta", greedy: true
 # Application launcher and productivity software
 cask "alfred", greedy: true
 # Allows connection to a computer remotely
@@ -219,10 +219,6 @@ cask "discord", greedy: true
 cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
-# Free monospaced font with programming ligatures
-cask "font-fira-code", greedy: true
-# Developer targeted fonts with a high number of glyphs
-cask "font-hack-nerd-font", greedy: true
 # Free and open-source image editor
 cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -233,6 +229,8 @@ cask "httpie", greedy: true
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2", greedy: true
+# JetBrainsMono Nerd Font families (JetBrains Mono)
+cask "font-jetbrains-mono-nerd-font"
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
@@ -275,8 +273,8 @@ cask "visual-studio-code", greedy: true
 cask "wireshark", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
-# Application for configuring any YubiKey
-cask "yubico-yubikey-manager", greedy: true
+# # Application for configuring any YubiKey # Does not support ARM for now
+# cask "yubico-yubikey-manager", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
