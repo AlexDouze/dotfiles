@@ -215,8 +215,6 @@ cask "cryptomator", greedy: true
 cask "daisydisk", greedy: true
 # Voice and text chat software
 cask "discord", greedy: true
-# Application window manager focusing on simplicity
-cask "divvy", greedy: true
 # Launcher for *Epic Games* games
 cask "epic-games", greedy: true
 # Web browser
@@ -253,6 +251,8 @@ cask "pgadmin4", greedy: true
 cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle", greed: true
 # Automatically checks computer's security
 cask "silentknight", greedy: true
 # Team communication and collaboration software
