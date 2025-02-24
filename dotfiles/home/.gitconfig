@@ -1,6 +1,10 @@
+[includeIf "gitdir:~/Codebase/airnity/"]
+    path = ~/.gitconfig-work
+[includeIf "gitdir:~/Codebase/alexdouze/"]
+    path = ~/.gitconfig-perso 
 [user]
     name = Alexandre Douze
-
+    signingkey = 013A18CCF05E3A80570D78C64E8799DFF5B3D17D
 [push]
     default = simple
     autoSetupRemote = true
