@@ -14,6 +14,9 @@ fi
 
 brew bundle -v --no-lock --file=$DIR/Brewfile
 
+mkdir -p $HOME/.config/chezmoi
+cp ./chezmoi.yaml $HOME/.config/chezmoi/chezmoi.yaml
+
 # Chezmoi
 echo "Apply chezmoi"
 chezmoi apply --force
