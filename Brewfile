@@ -11,6 +11,8 @@ brew "node"
 brew "aicommits"
 # Mozilla CA bundle for Python
 brew "certifi"
+# Manage your dotfiles across multiple diverse machines, securel
+brew "chezmoi"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Automate deployment, configuration, and upgrading
@@ -229,6 +231,8 @@ cask "httpie", greedy: true
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2", greedy: true
+# Enable generative AI features in iTerm2
+cask "itermai", greedy: true
 # JetBrainsMono Nerd Font families (JetBrains Mono)
 cask "font-jetbrains-mono-nerd-font"
 # Keyboard customiser
