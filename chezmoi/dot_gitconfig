@@ -1,6 +1,6 @@
 [includeIf "gitdir:~/Codebase/airnity/"]
     path = ~/.gitconfig-work
-[includeIf "gitdir:~/Codebase/alexdouze/"]
+[includeIf "gitdir:~/Codebase/alexdouze/|.dotfiles"]
     path = ~/.gitconfig-perso 
 [user]
     name = Alexandre Douze

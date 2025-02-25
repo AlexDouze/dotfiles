@@ -14,11 +14,9 @@ fi
 
 brew bundle -v --no-lock --file=$DIR/Brewfile
 
-# Stowing dotfiles
-echo "Stowing dotfiles"
-rm -rf ~/.gitconfig ~/.gitignore ~/.zshrc ~/.config/{bat,k9s,nvim,starship.toml}
-stow -d $DIR/dotfiles -t $HOME home
-stow -d $DIR/dotfiles -t $HOME/.config config
+# Chezmoi
+echo "Apply chezmoi"
+chezmoi apply --force
 
 # Install oh-my-zsh
 echo "Install Oh My ZSH"
