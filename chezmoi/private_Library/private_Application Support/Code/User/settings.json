@@ -17,5 +17,12 @@
         "editor.tabSize": 4,
         "editor.insertSpaces": true,
         "editor.detectIndentation": false
-    }
+    },
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "enabled"
+    },
+    "projectManager.git.baseFolders": [
+        "~/Codebase/github.com/airnity",
+        "~/Codebase/github.com/alexdouze"
+    ]
 }
