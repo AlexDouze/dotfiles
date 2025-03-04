@@ -51,7 +51,6 @@ source $ZSH/oh-my-zsh.sh
 # Exports
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
-export KUBECONFIG=$(ls ~/.kube | grep conf | awk -v d="$HOME/.kube/" '{ printf "%s%s:", d,$0}')
 export WORKON_HOME=$HOME/.virtualenvs
 export PIP_REQUIRE_VIRTUALENV=true
 export VIRTUAL_ENV_DISABLE_PROMPT=1
