@@ -13,8 +13,13 @@
         "editor.insertSpaces": true,
         "editor.detectIndentation": false
     },
+    "[helm]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
     "[json]": {
-        "editor.tabSize": 4,
+        "editor.tabSize": 2,
         "editor.insertSpaces": true,
         "editor.detectIndentation": false
     },
@@ -24,5 +29,10 @@
     "projectManager.git.baseFolders": [
         "~/Codebase/github.com/airnity",
         "~/Codebase/github.com/alexdouze"
-    ]
+    ],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.smoothScrolling": true
 }
