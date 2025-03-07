@@ -1,38 +1,39 @@
 {
-    "workbench.colorTheme": "Solarized Light",
-    "workbench.preferredDarkColorTheme": "Solarized Dark",
-    "window.autoDetectColorScheme": true,
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-    "terminal.integrated.fontLigatures.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "files.trimTrailingWhitespace": true,
-    "[yaml]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.detectIndentation": false
-    },
-    "[helm]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.detectIndentation": false
-    },
-    "[json]": {
-        "editor.tabSize": 2,
-        "editor.insertSpaces": true,
-        "editor.detectIndentation": false
-    },
-    "vs-kubernetes": {
-        "vs-kubernetes.crd-code-completion": "enabled"
-    },
-    "projectManager.git.baseFolders": [
-        "~/Codebase/github.com/airnity",
-        "~/Codebase/github.com/alexdouze"
-    ],
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "editor.minimap.renderCharacters": false,
-    "editor.smoothScrolling": true
+  "workbench.colorTheme": "Solarized Light",
+  "workbench.preferredDarkColorTheme": "Solarized Dark",
+  "window.autoDetectColorScheme": true,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontLigatures.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.trimTrailingWhitespace": true,
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[helm]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.crd-code-completion": "enabled"
+  },
+  "projectManager.git.baseFolders": [
+    "~/Codebase/github.com/airnity",
+    "~/Codebase/github.com/alexdouze"
+  ],
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.smoothScrolling": true,
+  "files.insertFinalNewline": true
 }
