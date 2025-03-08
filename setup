@@ -12,7 +12,7 @@ else
   brew update
 fi
 
-brew bundle -v --no-lock --file=$DIR/Brewfile
+brew bundle -v --file=$DIR/Brewfile
 
 # Chezmoi
 mkdir -p $HOME/.config/chezmoi
