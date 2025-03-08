@@ -1,16 +1,13 @@
 #!/bin/bash
 
-# Save current directory
-current=$PWD
-cd $HOME/.dotfiles
+# Get this file path
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Bundle Brewfile
-brew bundle dump --describe -f
+brew bundle dump --describe -f --file=$DIR/Brewfile
 
-# Commit and push
-git add $HOME/.dotfiles/Brewfile
-aicommits
-git push
+# Edit Brewfile and add ", greedy: true" to the end of each line strating with cask
+sed -i '' '/^cask/ s/$/, greedy: true/' $DIR/Brewfile
 
-# Restore current directory
-cd $current
+# Chezmoi merge
+chezmoi merge-all

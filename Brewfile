@@ -11,8 +11,6 @@ brew "node"
 brew "aicommits"
 # Mozilla CA bundle for Python
 brew "certifi"
-# Manage your dotfiles across multiple diverse machines, securel
-brew "chezmoi"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Automate deployment, configuration, and upgrading
@@ -77,6 +75,8 @@ brew "grep"
 brew "grpcurl"
 # Kubernetes package manager
 brew "helm"
+# Tool for automatically generating markdown documentation for helm charts
+brew "helm-docs"
 # Command-line tools for OpenPGP-related operations
 brew "hopenpgp-tools"
 # Improved top (interactive process viewer)
@@ -191,8 +191,6 @@ brew "alexdouze/tap/gitm"
 brew "alexdouze/tap/k3kcli"
 # Watcher for macOS 10.14+ light/dark mode changes
 brew "cormacrelf/tap/dark-notify"
-# Automatically generate markdown documentation for helm charts
-brew "helm-docs"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # Redpanda CLI & toolbox
@@ -225,8 +223,7 @@ cask "discord", greedy: true
 cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
-# JetBrainsMono Nerd Font families (JetBrains Mono)
-cask "font-jetbrains-mono-nerd-font"
+cask "font-jetbrains-mono-nerd-font", greedy: true
 # Free and open-source image editor
 cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -258,7 +255,7 @@ cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
 # Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle", greed: true
+cask "rectangle", greedy: true
 # Automatically checks computer's security
 cask "silentknight", greedy: true
 # Team communication and collaboration software
