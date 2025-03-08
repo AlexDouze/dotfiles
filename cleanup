@@ -1,3 +1,11 @@
 #!/bin/bash
 
-brew bundle cleanup --force
+brew bundle cleanup
+# If exit code is 1 ask user if they want to force cleanup
+if [ $? -eq 1 ]; then
+    read -p "Do you want to force cleanup? (y/n) " -n 1 -r
+
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        brew bundle cleanup --force
+    fi
+fi
