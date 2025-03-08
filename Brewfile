@@ -1,6 +1,6 @@
+tap "alexdouze/tap"
 tap "cormacrelf/tap"
 tap "homebrew/bundle"
-tap "norwoodj/tap"
 tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
@@ -29,6 +29,8 @@ brew "awscli"
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
 brew "cilium-cli"
 # Home for the Cluster Management API work, a subproject of sig-cluster-lifecycle
@@ -93,6 +95,8 @@ brew "ipcalc"
 brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Super fast CLI tool to decode and encode JWTs built in Rust
+brew "jwt-cli"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Network authentication protocol
@@ -145,10 +149,6 @@ brew "starship"
 brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
-# Network analyzer and capture tool - without graphical user interface
-brew "wireshark", link: false
-# Terminal UI for tshark, inspired by Wireshark
-brew "termshark"
 # Tool to generate documentation from Terraform modules
 brew "terraform-docs"
 # Text interface for Git repositories
@@ -167,6 +167,8 @@ brew "virtualenvwrapper"
 brew "watch"
 # Internet file retriever
 brew "wget"
+# Network analyzer and capture tool - without graphical user interface
+brew "wireshark"
 # JavaScript package manager
 brew "yarn"
 # Tool for managing your YubiKey configuration
@@ -183,12 +185,14 @@ brew "zsh-fast-syntax-highlighting"
 brew "zsh-history-substring-search"
 # ZSH plugin that reminds you to use existing aliases for commands you just typed
 brew "zsh-you-should-use"
+# Git Manager CLI tool
+brew "alexdouze/tap/gitm"
+# The k3kcli provides a quick and easy way to create K3k clusters and automatically exposes them via a kubeconfig.
+brew "alexdouze/tap/k3kcli"
 # Watcher for macOS 10.14+ light/dark mode changes
 brew "cormacrelf/tap/dark-notify"
-# Terraform
-brew "hashicorp/tap/terraform"
 # Automatically generate markdown documentation for helm charts
-brew "norwoodj/tap/helm-docs"
+brew "helm-docs"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # Redpanda CLI & toolbox
@@ -221,6 +225,8 @@ cask "discord", greedy: true
 cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
+# JetBrainsMono Nerd Font families (JetBrains Mono)
+cask "font-jetbrains-mono-nerd-font"
 # Free and open-source image editor
 cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
@@ -233,8 +239,6 @@ cask "istat-menus", greedy: true
 cask "iterm2", greedy: true
 # Enable generative AI features in iTerm2
 cask "itermai", greedy: true
-# JetBrainsMono Nerd Font families (JetBrains Mono)
-cask "font-jetbrains-mono-nerd-font"
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
@@ -277,8 +281,6 @@ cask "visual-studio-code", greedy: true
 cask "wireshark", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
-# # Application for configuring any YubiKey # Does not support ARM for now
-# cask "yubico-yubikey-manager", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
