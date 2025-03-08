@@ -12,11 +12,15 @@ sed -i '' '/^cask/ s/$/, greedy: true/' $DIR/Brewfile
 # Chezmoi merge
 chezmoi re-add
 
-# Ask if user wants to commit and push
-read -p "Do you want to commit and push? (y/n) " -n 1 -r
+# If repo is dirty, ask if user wants to commit and push
+if [ -n "$(git -C $DIR status --porcelain)" ]; then
+    # Ask if user wants to commit and push
+    read -p "Do you want to commit and push? (y/n) " -n 1 -r
 
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    git -C $DIR add --all
-    git -C $DIR commit
-    chezmoi git push
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        git -C $DIR add --all
+        git -C $DIR commit
+        chezmoi git push
+    fi
 fi
+
