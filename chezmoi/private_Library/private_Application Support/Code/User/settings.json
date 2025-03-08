@@ -36,5 +36,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.smoothScrolling": true,
   "files.insertFinalNewline": true,
-  "editor.cursorBlinking": "smooth"
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on"
 }
