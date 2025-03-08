@@ -10,4 +10,4 @@ brew bundle dump --describe -f --file=$DIR/Brewfile
 sed -i '' '/^cask/ s/$/, greedy: true/' $DIR/Brewfile
 
 # Chezmoi merge
-chezmoi merge-all
+chezmoi re-add

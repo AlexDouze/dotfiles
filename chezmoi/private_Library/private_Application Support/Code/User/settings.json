@@ -35,5 +35,6 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.minimap.renderCharacters": false,
   "editor.smoothScrolling": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "editor.cursorBlinking": "smooth"
 }
