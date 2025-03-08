@@ -12,6 +12,8 @@ else
   brew update
 fi
 
+# Install brew packages
+echo "Install brew packages"
 brew bundle -v --file=$DIR/Brewfile
 
 # Chezmoi
@@ -27,9 +29,12 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+# Update macOS
+echo "Update macOS"
 sudo softwareupdate -i -a --verbose
 
-# Sudo with touchId:w
+# Sudo with touchId
+echo "Sudo with touchId"
 if ! grep -q pam_tid.so /etc/pam.d/sudo; then
   echo "Add pam_tid.so to /etc/pam.d/sudo"
   sudo sed -i '' '2i\
