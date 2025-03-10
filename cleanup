@@ -1,11 +1,14 @@
 #!/bin/bash
 
-brew bundle cleanup
+# Get this file path
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+brew bundle cleanup --file=$DIR/Brewfile
 # If exit code is 1 ask user if they want to force cleanup
 if [ $? -eq 1 ]; then
     read -p "Do you want to force cleanup? (y/n) " -n 1 -r
 
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        brew bundle cleanup --force
+        brew bundle cleanup --force --file=$DIR/Brewfile
     fi
 fi
