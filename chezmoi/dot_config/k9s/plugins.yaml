@@ -1,17 +1,5 @@
 plugins:
-  # Sends logs over to jq for processing. This leverages kubectl plugin kubectl-jq.
-  jqlogs:
-    shortCut: Ctrl-J
-    confirm: false
-    description: "Logs (jq)"
-    scopes:
-      - po
-    command: sh
-    background: false
-    args:
-      - -c
-      - "kubectl logs $NAME -n $NAMESPACE --context $CONTEXT | jq -r . | bat"
-  open:
+  open-ingress:
     shortCut: Ctrl-O
     confirm: false
     description: "Open ingress"
@@ -22,6 +10,17 @@ plugins:
     args:
       - -c
       - "open $(kubectl get ing -n $NAMESPACE $NAME --context $CONTEXT -o jsonpath='https://{.spec.rules[0].host}')"
+  open-httproute:
+    shortCut: Ctrl-O
+    confirm: false
+    description: "Open Http Route"
+    scopes:
+      - httproute
+    command: sh
+    background: true
+    args:
+      - -c
+      - "open $(kubectl get httproute -n $NAMESPACE $NAME --context $CONTEXT -o jsonpath='https://{.spec.hostnames[0]}')"
   removefinalizers:
     shortCut: Ctrl-L
     confirm: true
@@ -77,3 +76,19 @@ plugins:
       - $CONTEXT
       - -it
       - --image=nicolaka/netshoot
+  crossplane-trace:
+    shortCut: w
+    confirm: false
+    description: "Crossplane Trace"
+    scopes:
+      - all
+    command: sh
+    background: false
+    args:
+      - -c
+      - |
+        if [ -n "$NAMESPACE" ]; then
+          crossplane beta trace --context $CONTEXT -n $NAMESPACE $RESOURCE_NAME.$RESOURCE_GROUP $NAME -owide | less -K
+        else
+          crossplane beta trace --context $CONTEXT $RESOURCE_NAME.$RESOURCE_GROUP $NAME -owide | less -K
+        fi

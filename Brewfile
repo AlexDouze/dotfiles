@@ -37,6 +37,8 @@ brew "clusterctl"
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Build control planes without needing to write code
+brew "crossplane"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Isolated development environments using Docker

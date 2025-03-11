@@ -1,1 +1,7 @@
 views:
+  v1/namespaces:
+    columns:
+      - NAME
+      - OWNER:.metadata.labels.app\.airnity\.io\/owner
+      - STATUS
+      - AGE
