@@ -226,8 +226,6 @@ cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
 cask "font-jetbrains-mono-nerd-font", greedy: true
-# Free and open-source image editor
-cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
@@ -316,6 +314,7 @@ vscode "mhutchie.git-graph"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.autopep8"
+vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-vscode-remote.remote-containers"
