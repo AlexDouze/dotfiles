@@ -37,5 +37,6 @@
   "editor.smoothScrolling": true,
   "files.insertFinalNewline": true,
   "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on"
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.iconTheme": "vscode-icons"
 }
