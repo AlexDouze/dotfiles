@@ -24,7 +24,9 @@
     "editor.detectIndentation": false
   },
   "vs-kubernetes": {
-    "vs-kubernetes.crd-code-completion": "enabled"
+    "vs-kubernetes.crd-code-completion": "enabled",
+    "vscode-kubernetes.helm-path-mac": "/Users/douze/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/douze/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
   "projectManager.git.baseFolders": [
     "~/Codebase/github.com/airnity",
@@ -41,5 +43,11 @@
   "githubPullRequests.pullBranch": "never",
   "workbench.iconTheme": "vscode-icons",
   "workbench.list.smoothScrolling": true,
-  "terminal.integrated.smoothScrolling": true
+  "terminal.integrated.smoothScrolling": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
