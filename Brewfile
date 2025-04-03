@@ -131,6 +131,8 @@ brew "opentofu"
 brew "operator-sdk"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # Object-relational database system
 brew "postgresql@15"
 # Rsync for cloud storage
