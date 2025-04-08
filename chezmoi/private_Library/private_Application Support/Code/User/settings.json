@@ -49,5 +49,6 @@
   },
   "[svelte]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "svelte.enable-ts-plugin": true,
 }

@@ -95,6 +95,10 @@ alias rnt='airnity'
 alias vim="nvim"
 alias vi="nvim"
 alias aic="aicommits"
+alias dev="docker compose -f dev.compose.yaml"
+alias devr="dev run --rm --remove-orphans --service-ports"
+alias deve="dev exec"
+alias devd="dev down --remove-orphans"
 
 # GPG
 gpgconf --launch gpg-agent
