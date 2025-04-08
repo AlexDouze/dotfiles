@@ -215,6 +215,8 @@ cask "anydesk", greedy: true
 cask "arc", greedy: true
 # Menu bar icon organiser
 cask "bartender", greedy: true
+# Open source IDE for exploring and testing APIs
+cask "bruno", greedy: true
 # Code snippet manager
 cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool
