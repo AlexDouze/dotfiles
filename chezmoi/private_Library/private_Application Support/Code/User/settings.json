@@ -28,10 +28,6 @@
     "vscode-kubernetes.helm-path-mac": "/Users/douze/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.minikube-path-mac": "/Users/douze/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
-  "projectManager.git.baseFolders": [
-    "~/Codebase/github.com/airnity",
-    "~/Codebase/github.com/alexdouze"
-  ],
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -51,4 +47,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "svelte.enable-ts-plugin": true,
+  "projectManager.git.baseFolders": [
+    "~/Codebase/"
+  ],
 }
