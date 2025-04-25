@@ -2,12 +2,14 @@
     path = ~/.gitconfig-work
 [includeIf "gitdir:~/Codebase/github.com/alexdouze/"]
     path = ~/.gitconfig-perso
+[includeIf "gitdir:~/Codebase/github.com/akuity/"]
+    path = ~/.gitconfig-perso
 [includeIf "gitdir:~/.dotfiles/"]
     path = ~/.gitconfig-perso
 [includeIf "gitdir:/opt/homebrew/Library/Taps/alexdouze/homebrew-tap/"]
-    path = ~/.gitconfig-perso    
+    path = ~/.gitconfig-perso
 [user]
-    name = Alexandre Douze
+	name = Alexandre Ledit
     signingkey = 013A18CCF05E3A80570D78C64E8799DFF5B3D17D
 [push]
     default = simple

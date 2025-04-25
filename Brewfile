@@ -17,14 +17,14 @@ brew "cryptography"
 brew "ansible"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Per-project, per-directory shell environments
 brew "autoenv"
 # Securely store and access AWS credentials in development environments
 brew "aws-vault"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -135,6 +135,8 @@ brew "pinentry-mac"
 brew "pnpm"
 # Object-relational database system
 brew "postgresql@15"
+# Develop and deploy code with zero configuration
+brew "railway"
 # Rsync for cloud storage
 brew "rclone"
 # Search tool like grep and The Silver Searcher
@@ -157,6 +159,8 @@ brew "telnet"
 brew "terraform-docs"
 # Text interface for Git repositories
 brew "tig"
+# Define your dev environment as code. For microservice apps on Kubernetes
+brew "tilt"
 # Lightweight BitTorrent client
 brew "transmission-cli"
 # Creates fully functional virtual k8s cluster inside host k8s cluster's namespace
@@ -278,6 +282,8 @@ cask "transmission", greedy: true
 cask "viscosity", greedy: true
 # Open-source code editor
 cask "visual-studio-code", greedy: true
+# Native desktop client for WhatsApp
+cask "whatsapp", greedy: true
 # Network protocol analyzer
 cask "wireshark", greedy: true
 # X Certificate and Key management
@@ -293,6 +299,7 @@ vscode "christian-kohler.path-intellisense"
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
+vscode "docker.docker"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
@@ -333,6 +340,7 @@ vscode "rust-lang.rust-analyzer"
 vscode "saoudrizwan.claude-dev"
 vscode "svelte.svelte-vscode"
 vscode "tamasfe.even-better-toml"
+vscode "tilt-dev.tiltfile"
 vscode "tim-koehler.helm-intellisense"
 vscode "upboundio.upbound"
 vscode "visualstudioexptteam.vscodeintellicode"

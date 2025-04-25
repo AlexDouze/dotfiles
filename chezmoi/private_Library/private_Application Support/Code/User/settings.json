@@ -21,7 +21,8 @@
   "[json]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vs-kubernetes": {
     "vs-kubernetes.crd-code-completion": "enabled",
@@ -44,10 +45,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[svelte]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "svelte.enable-ts-plugin": true,
   "projectManager.git.baseFolders": [
     "~/Codebase/"
   ],
+  "editor.renderWhitespace": "none",
 }
