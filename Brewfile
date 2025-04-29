@@ -15,6 +15,8 @@ brew "certifi"
 brew "cryptography"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -91,6 +93,8 @@ brew "hub"
 brew "hubble"
 # Configurable static site generator
 brew "hugo"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Calculate various network masks, etc. from a given IP address
 brew "ipcalc"
 # Update of iperf: measures TCP, UDP, and SCTP bandwidth
