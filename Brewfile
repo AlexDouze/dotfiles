@@ -250,6 +250,8 @@ cask "iterm2", greedy: true
 cask "itermai", greedy: true
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
+# End-to-end encryption software
+cask "keybase", greedy: true
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update", greedy: true
 # Meet, chat, call, and collaborate in just one place
@@ -262,6 +264,10 @@ cask "monitorcontrol", greedy: true
 cask "orbstack", greedy: true
 # Administration and development platform for PostgreSQL
 cask "pgadmin4", greedy: true
+# Home media player
+cask "plex", greedy: true
+# Home media server
+cask "plex-media-server", greedy: true
 # Collaboration platform for API development
 cask "postman", greedy: true
 # VPN client focusing on security
@@ -326,6 +332,7 @@ vscode "jlcs-es.x509-parser"
 vscode "jq-syntax-highlighting.jq-syntax-highlighting"
 vscode "lukepearson.cidr-ip-range"
 vscode "mhutchie.git-graph"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.autopep8"
