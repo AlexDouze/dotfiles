@@ -50,5 +50,9 @@
   "svelte.enable-ts-plugin": true,
   "projectManager.git.baseFolders": ["~/Codebase/"],
   "editor.renderWhitespace": "none",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "go.coverOnSave": true,
+  "go.coverOnSingleTest": true,
+  "go.coverOnSingleTestFile": true
 }

@@ -1,5 +1,6 @@
 tap "alexdouze/tap"
 tap "cormacrelf/tap"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "redpanda-data/tap"
@@ -203,6 +204,8 @@ brew "alexdouze/tap/gitm"
 brew "alexdouze/tap/k3kcli"
 # Watcher for macOS 10.14+ light/dark mode changes
 brew "cormacrelf/tap/dark-notify"
+# Terraform
+brew "hashicorp/tap/terraform"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # Redpanda CLI & toolbox
@@ -238,6 +241,8 @@ cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
 cask "font-jetbrains-mono-nerd-font", greedy: true
+# Free and open-source image editor
+cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
@@ -272,6 +277,8 @@ cask "plex-media-server", greedy: true
 cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
+# Workspace simplifier - to organize your workspace and boost your productivity
+cask "rambox", greedy: true
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle", greedy: true
 # Automatically checks computer's security
