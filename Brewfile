@@ -30,6 +30,8 @@ brew "aws-vault"
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# New way of working with Protocol Buffers
+brew "buf"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
@@ -228,6 +230,8 @@ cask "arc", greedy: true
 cask "bartender", greedy: true
 # Open source IDE for exploring and testing APIs
 cask "bruno", greedy: true
+# Anthropic's official Claude AI desktop app
+cask "claude", greedy: true
 # Code snippet manager
 cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool
@@ -246,7 +250,7 @@ cask "gimp", greedy: true
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
-cask "httpie", greedy: true
+cask "httpie-desktop", greedy: true
 # System monitoring app
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
@@ -292,7 +296,7 @@ cask "steam", greedy: true
 # Quicklook extension for source files
 cask "syntax-highlight", greedy: true
 # Mesh VPN based on WireGuard
-cask "tailscale", greedy: true
+cask "tailscale-app", greedy: true
 # Open-source BitTorrent client
 cask "transmission", greedy: true
 # OpenVPN client with AppleScript support
@@ -302,7 +306,7 @@ cask "visual-studio-code", greedy: true
 # Native desktop client for WhatsApp
 cask "whatsapp", greedy: true
 # Network protocol analyzer
-cask "wireshark", greedy: true
+cask "wireshark-app", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
 # Video communication and virtual meeting platform
@@ -310,12 +314,14 @@ cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
 vscode "adamhartford.vscode-base64"
 vscode "alefragnani.project-manager"
+vscode "anthropic.claude-code"
 vscode "bierner.color-info"
 vscode "bradlc.vscode-tailwindcss"
 vscode "christian-kohler.path-intellisense"
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
+vscode "devdreed.claude-task-master-extension"
 vscode "docker.docker"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
