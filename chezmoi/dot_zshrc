@@ -94,7 +94,6 @@ alias addr="http -b https://ifconfig.co/json"
 alias rnt='airnity'
 alias vim="nvim"
 alias vi="nvim"
-alias aic="aicommits --signoff"
 alias dev="docker compose -f dev.compose.yaml"
 alias devr="dev run --rm --remove-orphans --service-ports"
 alias deve="dev exec"
@@ -122,3 +121,7 @@ source $(brew --prefix autoenv)/activate.sh
 
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
+# Task Master aliases
+alias tm='task-master'
+alias taskmaster='task-master'

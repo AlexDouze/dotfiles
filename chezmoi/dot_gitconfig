@@ -69,4 +69,4 @@
     ff = only
     rebase = true
 [oh-my-zsh]
-	git-commit-alias = c95509ebfdbcc3c497f12697cfd2717bcb0a528b
+	git-commit-alias = cb72d7dcbf08b435c7f8a6470802b207b2aa02c3
