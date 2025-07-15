@@ -245,10 +245,12 @@ cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
 cask "font-jetbrains-mono-nerd-font", greedy: true
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli", greedy: true
 # Free and open-source image editor
 cask "gimp", greedy: true
-# Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk", greedy: true
+# Testing client for REST, GraphQL, and HTTP APIs
+cask "httpie-desktop", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie-desktop", greedy: true
 # System monitoring app
