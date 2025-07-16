@@ -5,3 +5,18 @@ views:
       - OWNER:.metadata.labels.app\.airnity\.io\/owner
       - STATUS
       - AGE
+  v1/nodes:
+    columns:
+      - NAME
+      - STATUS
+      - INSTANCE:.metadata.labels.beta\.kubernetes\.io\/instance-type
+      - TAINTS
+      - VERSION
+      - PODS
+      - CPU
+      - MEM
+      - "%CPU"
+      - "%MEM"
+      - "CPU/A"
+      - "MEM/A"
+      - AGE
