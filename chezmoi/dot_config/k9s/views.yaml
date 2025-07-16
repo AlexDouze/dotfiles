@@ -20,3 +20,5 @@ views:
       - "CPU/A"
       - "MEM/A"
       - AGE
+      - ROLE|W
+      - GPU|W
