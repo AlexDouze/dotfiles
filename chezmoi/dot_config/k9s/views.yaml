@@ -10,6 +10,7 @@ views:
       - NAME
       - STATUS
       - INSTANCE:.metadata.labels.beta\.kubernetes\.io\/instance-type
+      - ZONE:.metadata.labels.failure-domain\.beta\.kubernetes\.io\/zone
       - TAINTS
       - VERSION
       - PODS
