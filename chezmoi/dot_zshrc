@@ -125,3 +125,9 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 # Task Master aliases
 alias tm='task-master'
 alias taskmaster='task-master'
+
+
+# Claude
+export CLAUDE_CODE_USE_VERTEX=1
+export CLOUD_ML_REGION=europe-west1
+export ANTHROPIC_VERTEX_PROJECT_ID=airnity
