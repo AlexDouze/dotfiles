@@ -130,7 +130,7 @@ brew "make"
 brew "minikube"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Manage multiple NodeJS versions
+# Node.js version manager
 brew "nodenv"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
 brew "opentofu"
@@ -141,7 +141,7 @@ brew "pinentry-mac"
 # Fast, disk space efficient package manager
 brew "pnpm"
 # Object-relational database system
-brew "postgresql@15"
+brew "postgresql@17", link: true
 # Develop and deploy code with zero configuration
 brew "railway"
 # Rsync for cloud storage
@@ -346,6 +346,7 @@ vscode "jflbr.jwt-decoder"
 vscode "jlcs-es.x509-parser"
 vscode "jq-syntax-highlighting.jq-syntax-highlighting"
 vscode "lukepearson.cidr-ip-range"
+vscode "mechatroner.rainbow-csv"
 vscode "mhutchie.git-graph"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
@@ -354,6 +355,7 @@ vscode "ms-python.autopep8"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vsliveshare.vsliveshare"
