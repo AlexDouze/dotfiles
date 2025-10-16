@@ -53,6 +53,7 @@ plugins:
     background: true
     args:
       - sniff
+      - --image=europe-docker.pkg.dev/airnity/docker/ksniff-helper:main-a620776
       - $NAME
       - -n
       - $NAMESPACE

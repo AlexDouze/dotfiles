@@ -311,6 +311,8 @@ cask "whatsapp", greedy: true
 cask "wireshark-app", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
+# Gecko based web browser
+cask "zen", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
