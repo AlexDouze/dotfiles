@@ -24,8 +24,6 @@ brew "argocd"
 brew "bash"
 # Per-project, per-directory shell environments
 brew "autoenv"
-# Securely store and access AWS credentials in development environments
-brew "aws-vault"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -132,8 +130,6 @@ brew "minikube"
 brew "neovim"
 # Node.js version manager
 brew "nodenv"
-# Drop-in replacement for Terraform. Infrastructure as Code Tool
-brew "opentofu"
 # SDK for building Kubernetes applications
 brew "operator-sdk"
 # Pinentry for GPG on Mac
@@ -158,8 +154,6 @@ brew "socat"
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Organize software neatly under a single directory tree (e.g. /usr/local)
-brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to generate documentation from Terraform modules
