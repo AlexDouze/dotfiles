@@ -6,7 +6,7 @@ tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Writes your git commit messages for you with AI
 brew "aicommits"
@@ -303,6 +303,8 @@ cask "visual-studio-code", greedy: true
 cask "whatsapp", greedy: true
 # Network protocol analyzer
 cask "wireshark-app", greedy: true
+# Network protocol analyzer
+cask "wireshark-app", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
 # Gecko based web browser
@@ -367,7 +369,17 @@ vscode "tamasfe.even-better-toml"
 vscode "tilt-dev.tiltfile"
 vscode "tim-koehler.helm-intellisense"
 vscode "upboundio.upbound"
-vscode "visualstudioexptteam.vscodeintellicode"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vscode-icons-team.vscode-icons"
 vscode "yzhang.markdown-all-in-one"
+go "github.com/air-verse/air"
+go "github.com/go-delve/delve/cmd/dlv"
+go "golang.org/x/tools/cmd/goimports"
+go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
+go "github.com/fatih/gomodifytags"
+go "github.com/haya14busa/goplay/cmd/goplay"
+go "golang.org/x/tools/gopls"
+go "github.com/cweill/gotests/gotests"
+go "github.com/josharian/impl"
+go "github.com/cortesi/modd/cmd/modd"
+go "honnef.co/go/tools/cmd/staticcheck"
