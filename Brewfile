@@ -8,8 +8,6 @@ tap "redpanda-data/tap"
 brew "ack"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
-# Writes your git commit messages for you with AI
-brew "aicommits"
 # Mozilla CA bundle for Python
 brew "certifi"
 # Cryptographic recipes and primitives for Python
