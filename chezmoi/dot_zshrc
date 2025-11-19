@@ -134,4 +134,4 @@ export ANTHROPIC_VERTEX_PROJECT_ID=airnity
 
 
 # Airnity
-export aic="rnt ai-commit"
+alias aic="rnt ai-commit"
