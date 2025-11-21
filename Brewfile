@@ -6,8 +6,6 @@ tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # Mozilla CA bundle for Python
 brew "certifi"
 # Cryptographic recipes and primitives for Python
@@ -122,10 +120,10 @@ brew "kustomize"
 brew "lazydocker"
 # Utility for directing compilation
 brew "make"
-# Run a Kubernetes cluster locally
-brew "minikube"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Node.js version manager
 brew "nodenv"
 # SDK for building Kubernetes applications
@@ -367,8 +365,10 @@ vscode "tamasfe.even-better-toml"
 vscode "tilt-dev.tiltfile"
 vscode "tim-koehler.helm-intellisense"
 vscode "upboundio.upbound"
+vscode "upstash.context7-mcp"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vscode-icons-team.vscode-icons"
+vscode "wizcloud.wiz-vscode"
 vscode "yzhang.markdown-all-in-one"
 go "github.com/air-verse/air"
 go "github.com/go-delve/delve/cmd/dlv"
