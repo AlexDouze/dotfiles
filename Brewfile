@@ -11,16 +11,12 @@ brew "certifi"
 brew "cryptography"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # GitOps Continuous Delivery for Kubernetes
 brew "argocd"
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
-# Per-project, per-directory shell environments
-brew "autoenv"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # New way of working with Protocol Buffers
@@ -63,7 +59,7 @@ brew "gitup"
 brew "glib"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
-# GNU Pretty Good Privacy (PGP) package
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
@@ -89,7 +85,9 @@ brew "hub"
 brew "hubble"
 # Configurable static site generator
 brew "hugo"
-# Tools and libraries to manipulate images in many formats
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Calculate various network masks, etc. from a given IP address
 brew "ipcalc"
@@ -238,8 +236,8 @@ cask "font-jetbrains-mono-nerd-font", greedy: true
 cask "gcloud-cli", greedy: true
 # Free and open-source image editor
 cask "gimp", greedy: true
-# Testing client for REST, GraphQL, and HTTP APIs
-cask "httpie-desktop", greedy: true
+# Web browser
+cask "google-chrome", greedy: true
 # Testing client for REST, GraphQL, and HTTP APIs
 cask "httpie-desktop", greedy: true
 # System monitoring app
@@ -294,8 +292,6 @@ cask "viscosity", greedy: true
 cask "visual-studio-code", greedy: true
 # Native desktop client for WhatsApp
 cask "whatsapp", greedy: true
-# Network protocol analyzer
-cask "wireshark-app", greedy: true
 # Network protocol analyzer
 cask "wireshark-app", greedy: true
 # X Certificate and Key management
