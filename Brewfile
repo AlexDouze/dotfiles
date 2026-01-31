@@ -1,7 +1,6 @@
 tap "alexdouze/tap"
 tap "cormacrelf/tap"
 tap "hashicorp/tap"
-tap "homebrew/bundle"
 tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
@@ -251,8 +250,6 @@ cask "iterm2", greedy: true
 cask "itermai", greedy: true
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
-# End-to-end encryption software
-cask "keybase", greedy: true
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update", greedy: true
 # Meet, chat, call, and collaborate in just one place
@@ -317,7 +314,6 @@ vscode "christian-kohler.path-intellisense"
 vscode "csstools.postcss"
 vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
-vscode "devdreed.claude-task-master-extension"
 vscode "docker.docker"
 vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
@@ -368,7 +364,6 @@ vscode "upboundio.upbound"
 vscode "upstash.context7-mcp"
 vscode "vivaxy.vscode-conventional-commits"
 vscode "vscode-icons-team.vscode-icons"
-vscode "wizcloud.wiz-vscode"
 vscode "yzhang.markdown-all-in-one"
 go "github.com/air-verse/air"
 go "github.com/go-delve/delve/cmd/dlv"
