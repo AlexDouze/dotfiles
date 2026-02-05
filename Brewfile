@@ -143,6 +143,8 @@ brew "rclone"
 brew "ripgrep"
 # Rancher Kubernetes Engine, a Kubernetes installer that works everywhere
 brew "rke"
+# Safe, concurrent, practical language
+brew "rust"
 # Rust toolchain installer
 brew "rustup"
 # SOcket CAT: netcat on steroids
@@ -320,6 +322,7 @@ vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
+vscode "golang.go"
 vscode "gruntfuggly.todo-tree"
 vscode "hilleer.yaml-plus-json"
 vscode "jlcs-es.x509-parser"
