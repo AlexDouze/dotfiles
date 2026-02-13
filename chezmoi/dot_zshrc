@@ -129,3 +129,6 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL=claude-opus-4-5@20251101
 
 # Airnity
 alias aic="rnt ai-commit"
+
+# Local Dev
+export DEV_DOMAIN=aledit.u.airnity.private

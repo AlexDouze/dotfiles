@@ -23,3 +23,11 @@ views:
       - AGE
       - ROLE|W
       - GPU|W
+  networking.gke.io/v1/gkeiproutes:
+    sortColumn: IP:asc
+    columns:
+      - NAMESPACE
+      - NAME
+      - IP:.spec.addresses[0].value
+      - STATUS
+      - AGE

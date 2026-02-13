@@ -153,6 +153,8 @@ brew "socat"
 brew "speedtest-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to generate documentation from Terraform modules
@@ -318,7 +320,6 @@ vscode "donjayamanne.githistory"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "github.codespaces"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
