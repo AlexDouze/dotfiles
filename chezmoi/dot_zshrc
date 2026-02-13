@@ -132,3 +132,22 @@ alias aic="rnt ai-commit"
 
 # Local Dev
 export DEV_DOMAIN=aledit.u.airnity.private
+dcc() {
+    local dir="$PWD"
+    while [[ "$dir" != "/" ]]; do
+        local compose_file=$(find "$dir" -maxdepth 4 -type f | grep -E 'compose.*\.ya?ml$' | head -1)
+        if [[ -n "$compose_file" ]]; then
+            docker compose --project-directory . -f "$compose_file" "$@"
+            return $?
+        fi
+        dir="$(dirname "$dir")"
+    done
+    docker compose "$@"
+}
+
+# Functions
+dc() { dcc "$@"; }
+dcd() { dcc down --remove-orphans "$@"; }
+dcu() { dcc up -d "$@"; }
+dcr() { dcc run --rm --remove-orphans --service-ports "$@"; }
+dce() { dcc exec "$@"; }

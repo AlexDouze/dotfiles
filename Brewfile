@@ -217,8 +217,6 @@ cask "adguard", greedy: true
 cask "aerial@beta", greedy: true
 # Application launcher and productivity software
 cask "alfred", greedy: true
-# Allows connection to a computer remotely
-cask "anydesk", greedy: true
 # Chromium based browser
 cask "arc", greedy: true
 # Menu bar icon organiser
