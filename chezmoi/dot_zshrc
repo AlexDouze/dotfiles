@@ -145,7 +145,8 @@ dcc() {
     docker compose "$@"
 }
 
-# Functions
+# Functions — unalias docker-compose plugin shortcuts we override
+unalias dc dcd dcu dcr dce 2>/dev/null
 dc() { dcc "$@"; }
 dcd() { dcc down --remove-orphans "$@"; }
 dcu() { dcc up -d "$@"; }
