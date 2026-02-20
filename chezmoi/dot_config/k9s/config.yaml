@@ -6,7 +6,7 @@ k9s:
   readOnly: false
   noExitOnCtrlC: false
   ui:
-    enableMouse: true
+    enableMouse: false
     headless: false
     logoless: false
     crumbsless: false
@@ -30,7 +30,6 @@ k9s:
     tail: 100
     buffer: 5000
     sinceSeconds: -1
-    fullScreen: false
     textWrap: true
     showTime: false
   thresholds:
