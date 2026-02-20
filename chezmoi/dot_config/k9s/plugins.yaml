@@ -77,6 +77,22 @@ plugins:
       - $CONTEXT
       - -it
       - --image=nicolaka/netshoot
+  debug-node:
+    shortCut: Ctrl-U
+    confirm: false
+    description: "Debug Node"
+    scopes:
+      - no
+    command: kubectl
+    background: false
+    args:
+      - debug
+      - node/$NAME
+      - --context
+      - $CONTEXT
+      - -it
+      - --image=nicolaka/netshoot
+      - --profile=general
   crossplane-trace:
     shortCut: w
     confirm: false
