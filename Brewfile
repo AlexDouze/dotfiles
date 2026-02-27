@@ -39,6 +39,8 @@ brew "deno"
 brew "docker-compose"
 # Programming language for highly scalable real-time systems
 brew "erlang"
+# Modern, maintained replacement for ls
+brew "eza"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Simple, fast and user-friendly alternative to find
@@ -49,6 +51,8 @@ brew "fzf"
 brew "gcc"
 # GitHub command-line tool
 brew "gh"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Small git utilities
 brew "git-extras"
 # Git extension for versioning large files

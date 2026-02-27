@@ -83,7 +83,11 @@ alias kb=kubectl
 alias kcuc="kubectl config use-context"
 alias kcn="kubectl config set-context --current --namespace"
 alias ldk="lazydocker"
-alias sl="ls"
+# eza (ls replacement)
+alias ls="eza --icons --group-directories-first"
+alias ll="eza -la --icons --group-directories-first --git"
+alias lt="eza --tree --icons --level=2"
+alias la="eza -a --icons --group-directories-first"
 alias cat=bat
 alias addr="http -b https://ifconfig.co/json"
 alias rnt='airnity'

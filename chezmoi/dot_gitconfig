@@ -28,16 +28,24 @@
     signoff = "rebase HEAD~1 --signoff"
     so = "signoff"
 [core]
-    pager = bat -p
+    pager = delta
     editor = nvim
     excludesFile = ~/.gitignore
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
     tool = vimdiff
 [fetch]
     prune = true
 [diff]
     tool = vimdiff
+    colorMoved = default
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+    syntax-theme = Solarized (dark)
 [url "git@gitlab.com:"]
     insteadOf = https://gitlab.com/
 [url "git@bitbucket.org:"]
