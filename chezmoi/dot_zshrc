@@ -74,7 +74,7 @@ alias ggr="git graph"
 alias ggra="git graph --all"
 alias gua="git unadd"
 alias gcm="git commit -m"
-alias yolo='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
+alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias gcf='git commit --amend --reuse-message=HEAD'
 alias al="alias | grep"
 alias alf="alias | fzf"
