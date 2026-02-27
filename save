@@ -1,25 +1,26 @@
 #!/bin/bash
+set -e
 
 # Get this file path
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Bundle Brewfile
-brew bundle dump --describe -f --file=$DIR/Brewfile
+brew bundle dump --describe -f --file="$DIR/Brewfile"
 
-# Edit Brewfile and add ", greedy: true" to the end of each line strating with cask
-sed -i '' '/^cask/ s/$/, greedy: true/' $DIR/Brewfile
+# Edit Brewfile and add ", greedy: true" to the end of each line starting with cask
+sed -i '' '/^cask/ s/$/, greedy: true/' "$DIR/Brewfile"
 
 # Chezmoi merge
 chezmoi re-add
 
 # If repo is dirty, ask if user wants to commit and push
-if [ -n "$(git -C $DIR status --porcelain)" ]; then
+if [ -n "$(git -C "$DIR" status --porcelain)" ]; then
     # Ask if user wants to commit and push
     read -p "Do you want to commit and push? (y/n) " -n 1 -r
 
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        git -C $DIR add --all
-        git -C $DIR commit
+        git -C "$DIR" add --all
+        git -C "$DIR" commit
         chezmoi git push
     fi
 fi

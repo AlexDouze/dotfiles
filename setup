@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Get this file path
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
@@ -14,11 +15,11 @@ fi
 
 # Install brew packages
 echo "Install brew packages"
-brew bundle -v --file=$DIR/Brewfile
+brew bundle -v --file="$DIR/Brewfile"
 
 # Chezmoi
-mkdir -p $HOME/.config/chezmoi
-cp $DIR/chezmoi.yaml $HOME/.config/chezmoi/chezmoi.yaml
+mkdir -p "$HOME/.config/chezmoi"
+cp "$DIR/chezmoi.yaml" "$HOME/.config/chezmoi/chezmoi.yaml"
 echo "Apply chezmoi"
 chezmoi apply --force
 

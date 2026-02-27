@@ -30,7 +30,6 @@ plugins=(
   kubectl
   macos
   magic-enter
-  minikube
   ssh
   starship
   tailscale
@@ -62,15 +61,12 @@ export PAGER="bat -p"
 export XDG_CONFIG_HOME=$HOME/.config
 export YSU_MESSAGE_POSITION="after"
 
-export PATH=$PATH:$HOME/.dotfiles
-export PATH=$PATH:$HOME/.dotfiles/scripts
-export PATH=$PATH:$HOME/.local/bin
+export PATH="$PATH:$HOME/.dotfiles"
+export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.krew/bin"
-export PATH="$PATH:$HOME/.dotfiles"
-export PATH="$PATH:$HOME/.dotfiles/scripts"
 export PATH="$PATH:$(npm get prefix -g)/bin"
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 
 
 #Alias
@@ -105,16 +101,16 @@ gpgconf --launch gpg-agent
 source /opt/homebrew/bin/virtualenvwrapper_lazy.sh
 
 # Nodenv
-eval "$(nodenv init -)"
+command -v nodenv &>/dev/null && eval "$(nodenv init -)"
 
 # Airnity cli
-source <(airnity completion zsh); compdef _airnity airnity
+command -v airnity &>/dev/null && { source <(airnity completion zsh); compdef _airnity airnity; }
 
 # History substring
 bindkey '^p' history-substring-search-up
 
-source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+[[ -f "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc" ]] && source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+[[ -f "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc" ]] && source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 
 # Task Master aliases
 alias tm='task-master'
@@ -129,7 +125,7 @@ export DEV_DOMAIN=aledit.u.airnity.private
 dcc() {
     local dir="$PWD"
     while [[ "$dir" != "/" ]]; do
-        local compose_file=$(find "$dir" -maxdepth 4 -type f | grep -E 'compose.*\.ya?ml$' | head -1)
+        local compose_file=$(find "$dir" -maxdepth 4 -type f \( -name '*compose*.yml' -o -name '*compose*.yaml' \) 2>/dev/null | head -1)
         if [[ -n "$compose_file" ]]; then
             docker compose --project-directory . -f "$compose_file" "$@"
             return $?
