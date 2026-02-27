@@ -123,6 +123,7 @@ alias taskmaster='task-master'
 
 # Airnity
 alias aic="rnt ai-commit"
+alias cap="chezmoi apply --force"
 
 # Local Dev
 export DEV_DOMAIN=aledit.u.airnity.private
