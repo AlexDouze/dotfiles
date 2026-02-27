@@ -97,6 +97,7 @@ alias dev="docker compose -f dev.compose.yaml"
 alias devr="dev run --rm --remove-orphans --service-ports"
 alias deve="dev exec"
 alias devd="dev down --remove-orphans"
+alias dot="code ~/.dotfiles"
 
 # GPG
 gpgconf --launch gpg-agent
