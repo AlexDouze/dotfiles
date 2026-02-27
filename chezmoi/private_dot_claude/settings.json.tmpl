@@ -1,5 +1,25 @@
 {
   "model": "vertex/claude-opus-4-6[1m]",
+  "permissions": {
+    "allow": [
+      "mcp__bifrost__listToolFiles",
+      "mcp__bifrost__readToolFile",
+      "mcp__bifrost__executeToolCode",
+      "mcp__bifrost__getToolDocs",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__click",
+      "mcp__chrome-devtools__press_key",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__get_console_message",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__list_console_messages"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  },
   "hooks": {
     "PermissionRequest": [
       {
@@ -34,5 +54,6 @@
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet-4-6[1m]",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus-4-6[1m]",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001"
-  }
+  },
+  "apiKeyHelper": "airnity auth print-access-token"
 }
