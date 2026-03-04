@@ -52,7 +52,8 @@
     "ANTHROPIC_BASE_URL": "https://bifrost.airnity.io/anthropic",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet-4-6[1m]",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus-4-6[1m]",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001"
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001",
+    "ENABLE_LSP_TOOL": "1"
   },
   "apiKeyHelper": "airnity auth print-access-token"
 }
