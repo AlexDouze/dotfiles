@@ -17,12 +17,14 @@ Bifrost is an MCP gateway that aggregates multiple MCP servers behind four meta-
 
 ## Code Intelligence
 
-Prefer LSP over Grep/Read for code navigation — it's faster, precise, and avoids reading entire files:
-- `workspaceSymbol` to find where something is defined
-- `findReferences` to see all usages across the codebase
-- `goToDefinition` / `goToImplementation` to jump to source
-- `hover` for type info without reading the file
+LSP is available for Go, Python, and TypeScript. Prefer LSP over Grep/Glob/Read for code navigation — it finds semantic matches (handles renames, aliases, shadowing) rather than text matches:
 
-Use Grep only when LSP isn't available or for text/pattern searches (comments, strings, config).
+- `documentSymbol` / `workspaceSymbol` — find symbols in a file or across the codebase
+- `goToDefinition` / `goToImplementation` — jump to source
+- `findReferences` — all usages (replaces Grep for symbol searches)
+- `hover` — type/signature info (replaces Read for quick lookups)
+- `incomingCalls` / `outgoingCalls` — trace call hierarchies
+
+Use Grep/Glob/Read only for text/pattern searches (comments, strings, config files) or languages without LSP support.
 
 After writing or editing code, check LSP diagnostics and fix errors before proceeding.
