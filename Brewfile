@@ -9,10 +9,6 @@ brew "ack"
 brew "certifi"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
-# Automate deployment, configuration, and upgrading
-brew "ansible"
-# GitOps Continuous Delivery for Kubernetes
-brew "argocd"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -23,28 +19,14 @@ brew "bat"
 brew "buf"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# CLI to install, manage & troubleshoot Kubernetes clusters running Cilium
-brew "cilium-cli"
-# Home for the Cluster Management API work, a subproject of sig-cluster-lifecycle
-brew "clusterctl"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
-# Build control planes without needing to write code
-brew "crossplane"
-# Secure runtime for JavaScript and TypeScript
-brew "deno"
 # Isolated development environments using Docker
 brew "docker-compose"
-# Programming language for highly scalable real-time systems
-brew "erlang"
 # Modern, maintained replacement for ls
 brew "eza"
-# Functional metaprogramming aware language built on Erlang VM
-brew "elixir"
-# Simple, fast and user-friendly alternative to find
-brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU compiler collection
@@ -75,50 +57,20 @@ brew "grep"
 brew "grpcurl"
 # Kubernetes package manager
 brew "helm"
-# Tool for automatically generating markdown documentation for helm charts
-brew "helm-docs"
-# Command-line tools for OpenPGP-related operations
-brew "hopenpgp-tools"
-# Improved top (interactive process viewer)
-brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Add GitHub support to git on the command-line
-brew "hub"
-# Network, Service & Security Observability for Kubernetes using eBPF
-brew "hubble"
-# Configurable static site generator
-brew "hugo"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
-# Tools and libraries to manipulate images in select formats
-brew "imagemagick"
-# Calculate various network masks, etc. from a given IP address
-brew "ipcalc"
-# Update of iperf: measures TCP, UDP, and SCTP bandwidth
-brew "iperf3"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Super fast CLI tool to decode and encode JWTs built in Rust
 brew "jwt-cli"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# Network authentication protocol
-brew "krb5"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Package manager for kubectl plugins
 brew "krew"
-# Kubernetes object analysis recommendations for improved reliability and security
-brew "kube-score"
 # SDK for building Kubernetes APIs using CRDs
 brew "kubebuilder"
-# Kubernetes controller and tool for one-way encrypted Secrets
-brew "kubeseal"
-# Template-free customization of Kubernetes YAML manifests
-brew "kustomize"
-# Lazier way to manage everything docker
-brew "lazydocker"
 # Utility for directing compilation
 brew "make"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -141,12 +93,8 @@ brew "protobuf"
 brew "protoc-gen-go"
 # Develop and deploy code with zero configuration
 brew "railway"
-# Rsync for cloud storage
-brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Rancher Kubernetes Engine, a Kubernetes installer that works everywhere
-brew "rke"
 # Safe, concurrent, practical language
 brew "rust"
 # Rust toolchain installer
@@ -161,16 +109,10 @@ brew "starship"
 brew "tailscale"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to generate documentation from Terraform modules
-brew "terraform-docs"
 # Text interface for Git repositories
 brew "tig"
 # Define your dev environment as code. For microservice apps on Kubernetes
 brew "tilt"
-# Lightweight BitTorrent client
-brew "transmission-cli"
-# Creates fully functional virtual k8s cluster inside host k8s cluster's namespace
-brew "vcluster"
 # Modern watch command
 brew "viddy"
 # Tool for creating isolated virtual python environments
@@ -201,24 +143,12 @@ brew "zsh-history-substring-search"
 brew "zsh-you-should-use"
 # Git Manager CLI tool
 brew "alexdouze/tap/gitm"
-# The k3kcli provides a quick and easy way to create K3k clusters and automatically exposes them via a kubeconfig.
-brew "alexdouze/tap/k3kcli"
-# Watcher for macOS 10.14+ light/dark mode changes
-brew "cormacrelf/tap/dark-notify"
 # Terraform
 brew "hashicorp/tap/terraform"
-# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
-brew "oven-sh/bun/bun"
-# Redpanda CLI & toolbox
-brew "redpanda-data/tap/redpanda"
 # Password manager that keeps all passwords secure behind one password
 cask "1password", greedy: true
 # Command-line interface for 1Password
 cask "1password-cli", greedy: true
-# Stand alone ad blocker
-cask "adguard", greedy: true
-# Apple TV Aerial screensaver
-cask "aerial@beta", greedy: true
 # Application launcher and productivity software
 cask "alfred", greedy: true
 # Chromium based browser
@@ -237,10 +167,6 @@ cask "cryptomator", greedy: true
 cask "cyberduck", greedy: true
 # Disk space visualiser
 cask "daisydisk", greedy: true
-# Voice and text chat software
-cask "discord", greedy: true
-# Launcher for *Epic Games* games
-cask "epic-games", greedy: true
 # Web browser
 cask "firefox", greedy: true
 cask "font-jetbrains-mono-nerd-font", greedy: true
@@ -250,54 +176,34 @@ cask "gcloud-cli", greedy: true
 cask "gimp", greedy: true
 # Web browser
 cask "google-chrome", greedy: true
-# Testing client for REST, GraphQL, and HTTP APIs
-cask "httpie-desktop", greedy: true
 # System monitoring app
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2", greedy: true
-# Enable generative AI features in iTerm2
-cask "itermai", greedy: true
 # Keyboard customiser
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update", greedy: true
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams", greedy: true
-# Sandbox construction video game
-cask "minecraft", greedy: true
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol", greedy: true
 # Replacement for Docker Desktop
 cask "orbstack", greedy: true
 # Administration and development platform for PostgreSQL
 cask "pgadmin4", greedy: true
-# Home media player
-cask "plex", greedy: true
-# Home media server
-cask "plex-media-server", greedy: true
-# Collaboration platform for API development
-cask "postman", greedy: true
 # VPN client focusing on security
 cask "protonvpn", greedy: true
-# Workspace simplifier - to organize your workspace and boost your productivity
-cask "rambox", greedy: true
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle", greedy: true
-# Automatically checks computer's security
-cask "silentknight", greedy: true
 # Team communication and collaboration software
 cask "slack", greedy: true
 # Music streaming service
 cask "spotify", greedy: true
-# Video game digital distribution service
-cask "steam", greedy: true
 # Quicklook extension for source files
 cask "syntax-highlight", greedy: true
 # Mesh VPN based on WireGuard
 cask "tailscale-app", greedy: true
-# Open-source BitTorrent client
-cask "transmission", greedy: true
 # OpenVPN client with AppleScript support
 cask "viscosity", greedy: true
 # Open-source code editor
@@ -308,8 +214,6 @@ cask "whatsapp", greedy: true
 cask "wireshark-app", greedy: true
 # X Certificate and Key management
 cask "xca", greedy: true
-# Gecko based web browser
-cask "zen", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
 vscode "aaron-bond.better-comments"
