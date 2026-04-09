@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 8,
+      "subtext" : {
+        "size" : 13,
+        "colorSelected" : "#839495E5",
+        "font" : "SF Pro Text",
+        "color" : "#586D74FF"
+      },
+      "shortcut" : {
+        "size" : 17,
+        "colorSelected" : "#93A0A1E3",
+        "font" : "SF Pro Text Medium",
+        "color" : "#839495CC"
+      },
+      "backgroundSelected" : "#073641FF",
+      "text" : {
+        "size" : 20,
+        "colorSelected" : "#93A0A1FF",
+        "font" : "SF Pro Text Medium",
+        "color" : "#839495FC"
+      },
+      "iconPaddingHorizontal" : 8,
+      "roundness" : 8,
+      "paddingVertical" : 6,
+      "iconSize" : 44
+    },
+    "search" : {
+      "backgroundSelected" : "#073641FF",
+      "paddingHorizontal" : 12,
+      "spacing" : 8,
+      "text" : {
+        "size" : 36,
+        "colorSelected" : "#93A0A1E5",
+        "font" : "SF Pro Display Light",
+        "color" : "#839495FF"
+      },
+      "background" : "#012B3500",
+      "roundness" : 6,
+      "paddingVertical" : 8
+    },
+    "window" : {
+      "color" : "#012B35E5",
+      "paddingHorizontal" : 8,
+      "width" : 580,
+      "borderPadding" : 0,
+      "borderColor" : "#012B35FF",
+      "blur" : 25,
+      "roundness" : 12,
+      "paddingVertical" : 8
+    },
+    "credit" : "Justin Morrow (Modernized)",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#839495CC",
+      "thickness" : 2
+    },
+    "name" : "Solarized Dark"
+  }
+}
