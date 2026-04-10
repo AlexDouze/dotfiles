@@ -24,8 +24,7 @@
       "mcp__chrome-devtools__navigate_page",
       "mcp__chrome-devtools__list_console_messages"
     ],
-    "deny": [],
-    "defaultMode": "auto"
+    "deny": []
   },
   "model": "opusplan",
   "hooks": {
