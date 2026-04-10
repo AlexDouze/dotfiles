@@ -5,10 +5,6 @@ tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
 brew "ack"
-# Mozilla CA bundle for Python
-brew "certifi"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -17,12 +13,16 @@ brew "bash"
 brew "bat"
 # New way of working with Protocol Buffers
 brew "buf"
+# Mozilla CA bundle for Python
+brew "certifi"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Modern, maintained replacement for ls
@@ -157,8 +157,6 @@ cask "arc", greedy: true
 cask "bartender", greedy: true
 # Open source IDE for exploring and testing APIs
 cask "bruno", greedy: true
-# Anthropic's official Claude AI desktop app
-cask "claude", greedy: true
 # Code snippet manager
 cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool
