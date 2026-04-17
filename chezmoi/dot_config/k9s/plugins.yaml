@@ -92,7 +92,7 @@ plugins:
       - $CONTEXT
       - -it
       - --image=nicolaka/netshoot
-      - --profile=general
+      - --profile=sysadmin
   crossplane-trace:
     shortCut: w
     confirm: false
