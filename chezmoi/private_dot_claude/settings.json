@@ -7,10 +7,6 @@
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001",
     "ENABLE_LSP_TOOL": "1"
   },
-  "autoCompactThreshold": 250000,
-  "effortLevel": "xhigh",
-  "effort": "xhigh",
-  "disableAutoMode": "disable",
   "permissions": {
     "allow": [
       "mcp__bifrost__listToolFiles",
@@ -62,8 +58,13 @@
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true
   },
+  "effortLevel": "xhigh",
   "autoUpdatesChannel": "latest",
-  "skipAutoPermissionPrompt": true
+  "disableAutoMode": "disable",
+  "skipAutoPermissionPrompt": true,
+  "autoCompactThreshold": 250000,
+  "effort": "xhigh"
 }
