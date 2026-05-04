@@ -81,7 +81,7 @@ alias lt="eza --tree --icons --level=2"
 alias la="eza -a --icons --group-directories-first"
 alias cat=bat
 alias addr="http -b https://ifconfig.co/json"
-alias rnt='$HOME/Codebase/github.com/airnity/airnity-cli/bin/airnity'
+alias rnt='airnity'
 alias vim="nvim"
 alias vi="nvim"
 alias dev="docker compose -f dev.compose.yaml"
