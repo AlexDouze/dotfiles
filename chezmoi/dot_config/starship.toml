@@ -100,7 +100,7 @@ $kubernetes\
 [directory]
 truncation_symbol = "…/"
 truncate_to_repo = true
-style= "#2aa198"
+style = "#2aa198"
 read_only = " "
 
 [character]
@@ -187,3 +187,33 @@ time_format = "%T"
 
 [gcloud]
 disabled = true
+
+# Customize the claude-code profile
+[profiles]
+claude-code = "$claude_model$claude_context$claude_cost"
+
+# Configure individual modules
+[claude_model]
+format = "[$symbol$model]($style) "
+symbol = "🤖 "
+style = "bold blue"
+
+[claude_context]
+format = "[$gauge $percentage ($input_tokens)]($style) "
+gauge_width = 10
+
+[claude_cost]
+format = "[$symbol$cost]($style) "
+symbol = "💰 "
+
+[[claude_context.display]]
+threshold = 0
+style = "bold #859900"
+
+[[claude_context.display]]
+threshold = 60
+style = "bold #b58900"
+
+[[claude_context.display]]
+threshold = 80
+style = "bold #dc322f"
