@@ -5,6 +5,8 @@
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet-4-6",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus-4-7",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001",
+    "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "250000",
+    "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
   "permissions": {
@@ -63,8 +65,7 @@
   },
   "effortLevel": "xhigh",
   "autoUpdatesChannel": "latest",
-  "disableAutoMode": "disable",
+  "useAutoModeDuringPlan": true,
   "skipAutoPermissionPrompt": true,
-  "autoCompactThreshold": 250000,
   "effort": "xhigh"
 }
