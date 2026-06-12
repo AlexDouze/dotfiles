@@ -144,9 +144,7 @@ brew "zsh-history-substring-search"
 # ZSH plugin that reminds you to use existing aliases for commands you just typed
 brew "zsh-you-should-use"
 # Git Manager CLI tool
-brew "alexdouze/tap/gitm"
-# Terraform
-brew "hashicorp/tap/terraform"
+brew "alexdouze/tap/gitm", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password", greedy: true
 # Command-line interface for 1Password
@@ -216,6 +214,7 @@ cask "wireshark-app", greedy: true
 cask "xca", greedy: true
 # Video communication and virtual meeting platform
 cask "zoom", greedy: true
+vscode "1password.op-vscode"
 vscode "aaron-bond.better-comments"
 vscode "adamhartford.vscode-base64"
 vscode "alefragnani.project-manager"
@@ -230,6 +229,7 @@ vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
 vscode "golang.go"
 vscode "gruntfuggly.todo-tree"
+vscode "hashicorp.terraform"
 vscode "hilleer.yaml-plus-json"
 vscode "jlcs-es.x509-parser"
 vscode "lukepearson.cidr-ip-range"
@@ -251,6 +251,7 @@ vscode "tamasfe.even-better-toml"
 vscode "tilt-dev.tiltfile"
 vscode "tim-koehler.helm-intellisense"
 vscode "vscode-icons-team.vscode-icons"
+vscode "yzane.markdown-pdf"
 vscode "yzhang.markdown-all-in-one"
 go "github.com/cilium/ebpf/cmd/bpf2go"
 go "golang.org/x/tools/cmd/goimports"
@@ -259,3 +260,4 @@ go "golang.org/x/tools/gopls"
 go "github.com/cweill/gotests/gotests"
 go "google.golang.org/protobuf/cmd/protoc-gen-go"
 go "google.golang.org/grpc/cmd/protoc-gen-go-grpc"
+npm "difit"
