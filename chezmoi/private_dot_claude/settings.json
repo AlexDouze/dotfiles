@@ -1,35 +1,25 @@
 {
   "apiKeyHelper": "airnity auth print-access-token",
+  "autoUpdatesChannel": "latest",
+  "effort": "xhigh",
+  "effortLevel": "xhigh",
+  "enabledPlugins": {
+    "bifrost@airnity-plugins": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
   "env": {
     "ANTHROPIC_BASE_URL": "https://bifrost.airnity.io/anthropic",
+    "ANTHROPIC_DEFAULT_FABLE_MODEL": "vertex/claude-fable-5[1m]",
     "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku-4-5@20251001",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus-4-8[1m]",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet-4-6[1m]",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "vertex/claude-fable-5[1m]",
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "250000",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
-  "permissions": {
-    "allow": [
-      "mcp__bifrost__listToolFiles",
-      "mcp__bifrost__readToolFile",
-      "mcp__bifrost__executeToolCode",
-      "mcp__bifrost__getToolDocs",
-      "mcp__chrome-devtools__new_page",
-      "mcp__chrome-devtools__take_snapshot",
-      "mcp__chrome-devtools__take_screenshot",
-      "mcp__chrome-devtools__click",
-      "mcp__chrome-devtools__press_key",
-      "mcp__chrome-devtools__resize_page",
-      "mcp__chrome-devtools__get_console_message",
-      "mcp__chrome-devtools__list_network_requests",
-      "mcp__chrome-devtools__navigate_page",
-      "mcp__chrome-devtools__list_console_messages"
-    ],
-    "deny": []
-  },
-  "model": "opus[1m]",
   "hooks": {
     "PermissionRequest": [
       {
@@ -54,20 +44,20 @@
       }
     ]
   },
+  "model": "opus",
+  "permissions": {
+    "allow": [
+      "mcp__bifrost__listToolFiles",
+      "mcp__bifrost__readToolFile",
+      "mcp__bifrost__executeToolCode",
+      "mcp__bifrost__getToolDocs"
+    ],
+    "deny": []
+  },
+  "skipAutoPermissionPrompt": true,
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
   },
-  "enabledPlugins": {
-    "bifrost@airnity-plugins": true,
-    "clangd-lsp@claude-plugins-official": true,
-    "gopls-lsp@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
-  },
-  "effortLevel": "xhigh",
-  "autoUpdatesChannel": "latest",
-  "skipAutoPermissionPrompt": true,
-  "useAutoModeDuringPlan": true,
-  "effort": "xhigh"
+  "useAutoModeDuringPlan": true
 }

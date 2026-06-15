@@ -182,6 +182,8 @@ cask "iterm2", greedy: true
 cask "karabiner-elements", greedy: true
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update", greedy: true
+# Email client
+cask "microsoft-outlook", greedy: true
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams", greedy: true
 # Tool to control external monitor brightness & volume
@@ -198,6 +200,8 @@ cask "rectangle", greedy: true
 cask "slack", greedy: true
 # Music streaming service
 cask "spotify", greedy: true
+# Real time file synchronisation software
+cask "syncthing-app", greedy: true
 # Quicklook extension for source files
 cask "syntax-highlight", greedy: true
 # Mesh VPN based on WireGuard
