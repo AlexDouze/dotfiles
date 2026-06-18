@@ -23,6 +23,17 @@ views:
       - AGE
       - ROLE|W
       - GPU|W
+  autoscaling/v2/horizontalpodautoscalers:
+    columns:
+      - NAMESPACE
+      - NAME
+      - REFERENCE:.spec.scaleTargetRef.name
+      - TARGETS:.status.currentMetrics[0].external.current.averageValue
+      - MINPODS:.spec.minReplicas
+      - MAXPODS:.spec.maxReplicas
+      - REPLICAS:.status.currentReplicas
+      - DESIRED:.status.desiredReplicas
+      - AGE
   networking.gke.io/v1/gkeiproutes:
     sortColumn: IP:asc
     columns:
