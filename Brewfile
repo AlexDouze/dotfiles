@@ -1,6 +1,7 @@
 tap "alexdouze/tap"
 tap "cormacrelf/tap"
 tap "hashicorp/tap"
+tap "janosmiko/tap"
 tap "oven-sh/bun"
 tap "redpanda-data/tap"
 # Search tool like grep, but optimized for programmers
@@ -145,6 +146,8 @@ brew "zsh-history-substring-search"
 brew "zsh-you-should-use"
 # Git Manager CLI tool
 brew "alexdouze/tap/gitm", trusted: true
+# Lightning Fast Kubernetes navigator - keyboard-focused TUI for managing K8s clusters
+brew "janosmiko/tap/lfk", trusted: true
 # Password manager that keeps all passwords secure behind one password
 cask "1password", greedy: true
 # Command-line interface for 1Password
