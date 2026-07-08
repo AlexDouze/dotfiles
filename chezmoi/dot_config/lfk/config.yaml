@@ -1,0 +1,30 @@
+appearance:
+  colorscheme: iterm2-solarized-dark
+monitoring:
+  # my-prod-cluster:
+  #   prometheus:
+  #     namespaces: ["monitoring"]
+  #     services: ["thanos-query"]
+  #     port: "9090"
+  #   alertmanager:
+  #     namespaces: ["monitoring"]
+  #     services: ["alertmanager-main"]
+  #     port: "9093"
+  #   node_metrics: prometheus  # "prometheus" or "metrics-api" (default: auto-detect)
+  _global:
+    prometheus:
+      namespaces: ["kps"]
+      services: ["kps-prometheus"]
+      port: "9090"
+    alertmanager:
+      namespaces: ["kps"]
+      services: ["kps-alertmanager"]
+      port: "9093"
+union_sets:
+  prod-telco:
+    contexts:
+      - prod-telco-par-1
+      - prod-telco-bra-1
+      - prod-telco-ash-1
+      - prod-telco-sgp-1
+mouse: false
