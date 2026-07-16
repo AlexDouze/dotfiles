@@ -1,4 +1,4 @@
-tap "alexdouze/tap"
+tap "alexdouze/tap", trusted: true
 tap "cormacrelf/tap"
 tap "hashicorp/tap"
 tap "janosmiko/tap"
@@ -116,6 +116,8 @@ brew "telnet"
 brew "tig"
 # Define your dev environment as code. For microservice apps on Kubernetes
 brew "tilt"
+# Terminal multiplexer
+brew "tmux"
 # Modern watch command
 brew "viddy"
 # Tool for creating isolated virtual python environments
@@ -177,6 +179,8 @@ cask "gcloud-cli", greedy: true
 cask "gimp", greedy: true
 # Web browser
 cask "google-chrome", greedy: true
+# Testing client for REST, GraphQL, and HTTP APIs
+cask "httpie-desktop", greedy: true
 # System monitoring app
 cask "istat-menus", greedy: true
 # Terminal emulator as alternative to Apple's Terminal app
