@@ -17,6 +17,7 @@
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus[1m]",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet[1m]",
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "250000",
+    "CLAUDE_CODE_API_KEY_HELPER_TTL_MS": "30000",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
