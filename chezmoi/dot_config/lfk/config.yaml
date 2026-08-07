@@ -21,6 +21,28 @@ monitoring:
       services: ["kps-alertmanager"]
       port: "9093"
 union_sets:
+  dev:
+    contexts:
+      - dev-admin
+      - dev-central
+      - dev-telco-par-1
+  it:
+    contexts:
+      - it-admin
+      - it-central
+  sandbox:
+    contexts:
+      - sandbox-admin
+      - sandbox-central
+      - sandbox-telco-par-1
+  prod:
+    contexts:
+      - prod-admin
+      - prod-central
+      - prod-telco-par-1
+      - prod-telco-bra-1
+      - prod-telco-ash-1
+      - prod-telco-sgp-1
   prod-telco:
     contexts:
       - prod-telco-par-1
