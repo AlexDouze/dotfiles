@@ -11,11 +11,6 @@
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
-  "disableClaudeAiConnectors": true,
-  "disableBundledSkills": true,
-  "disableRemoteControl": true,
-  "disableWorkflows": true,
-  "disableArtifact": true,
   "permissions": {
     "allow": [
       "mcp__bifrost__listToolFiles",
@@ -35,6 +30,8 @@
     ]
   },
   "model": "opusplan",
+  "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
   "hooks": {
     "PermissionRequest": [
       {
@@ -59,6 +56,9 @@
       }
     ]
   },
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
@@ -68,9 +68,11 @@
     "clangd-lsp@claude-plugins-official": true,
     "gopls-lsp@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true
   },
   "autoUpdatesChannel": "latest",
   "skipAutoPermissionPrompt": true,
   "useAutoModeDuringPlan": true,
+  "effortLevel": "medium"
 }
