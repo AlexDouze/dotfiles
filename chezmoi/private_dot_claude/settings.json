@@ -11,6 +11,11 @@
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
+  "disableClaudeAiConnectors": true,
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableArtifact": true,
   "permissions": {
     "allow": [
       "mcp__bifrost__listToolFiles",
@@ -18,7 +23,16 @@
       "mcp__bifrost__executeToolCode",
       "mcp__bifrost__getToolDocs"
     ],
-    "deny": []
+    "deny": [
+      "NotebookEdit",
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "ListAgents",
+      "SendMessage",
+      "ScheduleWakeup",
+      "PushNotification"
+    ]
   },
   "model": "opusplan",
   "hooks": {
@@ -56,9 +70,7 @@
     "pyright-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true
   },
-  "effortLevel": "xhigh",
   "autoUpdatesChannel": "latest",
   "skipAutoPermissionPrompt": true,
   "useAutoModeDuringPlan": true,
-  "effort": "xhigh"
 }
