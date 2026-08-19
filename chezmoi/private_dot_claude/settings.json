@@ -1,37 +1,21 @@
 {
-  "apiKeyHelper": "airnity auth print-access-token",
+  "autoUpdatesChannel": "latest",
+  "disableBundledSkills": true,
+  "disableWorkflows": true,
+  "effortLevel": "medium",
+  "enabledPlugins": {
+    "bifrost@airnity-plugins": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true
+  },
   "env": {
-    "ANTHROPIC_BASE_URL": "https://bifrost.airnity.io/anthropic",
-    "ANTHROPIC_DEFAULT_FABLE_MODEL": "vertex/claude-fable-5[1m]",
-    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "vertex/claude-haiku",
-    "ANTHROPIC_DEFAULT_OPUS_MODEL": "vertex/claude-opus[1m]",
-    "ANTHROPIC_DEFAULT_SONNET_MODEL": "vertex/claude-sonnet[1m]",
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "250000",
-    "CLAUDE_CODE_API_KEY_HELPER_TTL_MS": "30000",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
-  "permissions": {
-    "allow": [
-      "mcp__bifrost__listToolFiles",
-      "mcp__bifrost__readToolFile",
-      "mcp__bifrost__executeToolCode",
-      "mcp__bifrost__getToolDocs"
-    ],
-    "deny": [
-      "NotebookEdit",
-      "CronCreate",
-      "CronDelete",
-      "CronList",
-      "ListAgents",
-      "SendMessage",
-      "ScheduleWakeup",
-      "PushNotification"
-    ]
-  },
-  "model": "opusplan",
-  "disableClaudeAiConnectors": true,
-  "disableBundledSkills": true,
   "hooks": {
     "PermissionRequest": [
       {
@@ -56,23 +40,28 @@
       }
     ]
   },
-  "disableRemoteControl": true,
-  "disableWorkflows": true,
-  "disableArtifact": true,
+  "model": "opusplan",
+  "permissions": {
+    "allow": [
+      "mcp__bifrost__listToolFiles",
+      "mcp__bifrost__readToolFile",
+      "mcp__bifrost__executeToolCode",
+      "mcp__bifrost__getToolDocs"
+    ],
+    "deny": [
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "ListAgents",
+      "NotebookEdit",
+      "SendMessage"
+    ]
+  },
+  "skipAutoPermissionPrompt": true,
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
   },
-  "enabledPlugins": {
-    "bifrost@airnity-plugins": true,
-    "clangd-lsp@claude-plugins-official": true,
-    "gopls-lsp@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "mattpocock-skills@claude-plugins-official": true
-  },
-  "autoUpdatesChannel": "latest",
-  "skipAutoPermissionPrompt": true,
   "useAutoModeDuringPlan": true,
-  "effortLevel": "medium"
+  "remoteControlAtStartup": true
 }
