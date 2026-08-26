@@ -1,21 +1,27 @@
 {
-  "autoUpdatesChannel": "latest",
-  "disableBundledSkills": true,
-  "disableWorkflows": true,
-  "effortLevel": "medium",
-  "enabledPlugins": {
-    "bifrost@airnity-plugins": true,
-    "clangd-lsp@claude-plugins-official": true,
-    "gopls-lsp@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true,
-    "mattpocock-skills@claude-plugins-official": true
-  },
   "env": {
     "CLAUDE_CODE_AUTO_COMPACT_WINDOW": "250000",
     "CLAUDE_CODE_NO_FLICKER": "1",
     "ENABLE_LSP_TOOL": "1"
   },
+  "permissions": {
+    "allow": [
+      "mcp__bifrost__listToolFiles",
+      "mcp__bifrost__readToolFile",
+      "mcp__bifrost__executeToolCode",
+      "mcp__bifrost__getToolDocs"
+    ],
+    "deny": [
+      "CronCreate",
+      "CronDelete",
+      "CronList",
+      "ListAgents",
+      "NotebookEdit",
+      "SendMessage"
+    ]
+  },
+  "model": "opusplan",
+  "disableBundledSkills": true,
   "hooks": {
     "PermissionRequest": [
       {
@@ -40,28 +46,24 @@
       }
     ]
   },
-  "model": "opusplan",
-  "permissions": {
-    "allow": [
-      "mcp__bifrost__listToolFiles",
-      "mcp__bifrost__readToolFile",
-      "mcp__bifrost__executeToolCode",
-      "mcp__bifrost__getToolDocs"
-    ],
-    "deny": [
-      "CronCreate",
-      "CronDelete",
-      "CronList",
-      "ListAgents",
-      "NotebookEdit",
-      "SendMessage"
-    ]
-  },
-  "skipAutoPermissionPrompt": true,
+  "disableWorkflows": true,
   "statusLine": {
     "type": "command",
     "command": "starship statusline claude-code"
   },
-  "useAutoModeDuringPlan": true,
-  "remoteControlAtStartup": true
+  "enabledPlugins": {
+    "bifrost@airnity-plugins": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "mattpocock-skills@claude-plugins-official": true,
+    "slack@claude-plugins-official": true
+  },
+  "effortLevel": "medium",
+  "autoUpdatesChannel": "latest",
+  "remoteControlAtStartup": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
+  "useAutoModeDuringPlan": true
 }
