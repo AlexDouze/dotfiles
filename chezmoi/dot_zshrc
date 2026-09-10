@@ -89,6 +89,7 @@ alias devr="dev run --rm --remove-orphans --service-ports"
 alias deve="dev exec"
 alias devd="dev down --remove-orphans"
 alias dot="code ~/.dotfiles"
+alias bb="/Applications/bb.app/Contents/Resources/app.asar.unpacked/node_modules/bb-app/host-daemon/dist/bb"
 
 # GPG
 pgrep -x gpg-agent &>/dev/null || gpgconf --launch gpg-agent
