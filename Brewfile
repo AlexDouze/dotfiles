@@ -160,8 +160,12 @@ cask "alfred", greedy: true
 cask "arc", greedy: true
 # Menu bar icon organiser
 cask "bartender", greedy: true
+# IDE for running and orchestrating coding agents
+cask "bb", greedy: true
 # Open source IDE for exploring and testing APIs
 cask "bruno", greedy: true
+# Anthropic's official Claude AI desktop app
+cask "claude", greedy: true
 # Code snippet manager
 cask "codespace", greedy: true
 # Multi-platform client-side cloud file encryption tool

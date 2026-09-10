@@ -15,12 +15,14 @@
       "CronCreate",
       "CronDelete",
       "CronList",
+      "DesignSync",
       "ListAgents",
       "NotebookEdit",
-      "SendMessage"
+      "SendMessage",
+      "ShareOnboardingGuide"
     ]
   },
-  "model": "opusplan",
+  "model": "claude-fable-5-1[1m]",
   "disableBundledSkills": true,
   "hooks": {
     "PermissionRequest": [
@@ -30,6 +32,16 @@
             "type": "command",
             "command": "afplay /System/Library/Sounds/Funk.aiff",
             "async": true
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "airnity ai llms-txt 2>/dev/null || true"
           }
         ]
       }
@@ -64,6 +76,5 @@
   "autoUpdatesChannel": "latest",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
-  "skipAutoPermissionPrompt": true,
   "useAutoModeDuringPlan": true
 }

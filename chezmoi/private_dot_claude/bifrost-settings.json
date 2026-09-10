@@ -19,8 +19,7 @@
       "PushNotification",
       "RemoteTrigger",
       "ScheduleWakeup",
-      "SendUserFile",
-      "ShareOnboardingGuide"
+      "SendUserFile"
     ]
   }
 }

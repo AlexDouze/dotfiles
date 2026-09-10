@@ -164,3 +164,15 @@ r = grafana_it_central.query_loki_logs(
 # Once you get a result, read entry["labels"] for the exact values to use
 ```
 Do NOT use `list_loki_label_values` for discovery — may return errors and is slow on large label sets.
+
+### `tempo_*` tools (`tempo_traceql_search`, `tempo_get_trace`, `tempo_get_attribute_names/values`, `tempo_traceql_metrics_instant/range`)
+```python
+# start/end MUST be RFC3339 ("2026-09-02T08:00:00Z") — relative times like "now-5m" are rejected:
+#   invalid start time: parsing time "now-5m" as "2006-01-02T15:04:05Z07:00"
+# Compute the timestamps in the LLM, pass as strings.
+# Returns {"traces": [{traceID, rootServiceName, rootTraceName, startTimeUnixNano, durationMs, spanSet...}], "metrics": {...}}
+# Echo is large (~10KB for 20 traces) — use a tight time window and a selective TraceQL query, never "{}".
+r = grafana.tempo_traceql_search(cluster="dev-central", datasourceUid="tempo",
+    query="{resource.service.name=\"keycloak\"}", start="<rfc3339>", end="<rfc3339>")
+traces = [{"id": t["traceID"], "svc": t["rootServiceName"], "name": t["rootTraceName"]} for t in r.get("traces", [])]
+```
